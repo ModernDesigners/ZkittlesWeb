@@ -1,0 +1,41 @@
+@import "../../../colors.scss";
+.HeaderOption {
+    font-family: main_r;
+    color: $NavGray;
+    margin: 0 30px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.dropdownImg {
+    margin-left: 10px;
+}
+.DropdownBar {
+    width: 200px;
+    background: white;
+    top: 45px;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    height: 0;
+    transition: 0.5s;
+    z-index: 2;
+    overflow: hidden;
+}
+.DropdownButton {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    &:hover {
+        background: $White_;
+    }
+}
+.HeaderOption:hover .DropdownBar {
+    height: 225px;
+}

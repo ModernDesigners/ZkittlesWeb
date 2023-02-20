@@ -1,0 +1,26 @@
+.dropdownImg {
+  margin-left: 10px;
+}
+
+.responsiveGoDropdown {
+  width: 100%;
+  max-height: 0px;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.responsiveGoDropdownCome {
+  height: auto;
+  width: 100%;
+  max-height: 300px;
+}
+
+.responsiveDropdownButton {
+  margin: 10px;
+  font-family: main_r;
+  color: rgba(113, 115, 120, 0.8);
+}
+
+.DropOpen img {
+  transform: rotate(180deg);
+}

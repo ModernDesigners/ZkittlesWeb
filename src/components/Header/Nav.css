@@ -1,0 +1,220 @@
+nav {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navContainer .navSearch {
+  display: flex;
+  align-items: center;
+}
+nav .navContainer .navSearch input {
+  width: 400px;
+  height: 48px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50px;
+  padding: 0 20px;
+  font-family: main_r;
+  font-size: 17px;
+}
+nav .navContainer .navSearch input:focus {
+  outline: none;
+}
+nav .navContainer .navSearch input::placeholder {
+  color: #c8c9cb;
+}
+nav .navContainer .navSearch button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  margin-left: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #17af26;
+  border: 0;
+}
+nav .navContainer .navOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .navContainer .navOptions span {
+  font-family: main_r;
+  color: #46494f;
+  cursor: pointer;
+}
+nav .navContainer .navOptions .NavLineV {
+  height: 20px;
+  width: 1px;
+  background: #c8c9cb;
+  margin: 0 20px;
+}
+nav .navContainer .navOptions .CartNav {
+  cursor: pointer;
+}
+
+.navBurger {
+  display: none;
+  height: 30px;
+  aspect-ratio: 1;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 99;
+}
+.navBurger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin: 2.5px;
+  background: #05422c;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.navBurgerActive span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.navBurgerActive span:nth-child(2) {
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+.navBurgerActive span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.responsiveNav {
+  display: none;
+  justify-content: center;
+  padding: 10px;
+  position: fixed;
+  width: 300px;
+  background: white;
+  height: 100%;
+  top: 0;
+  z-index: 98;
+  left: -400px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+  transition: 0.7s ease-in-out;
+}
+.responsiveNav .responsiveNavLogo {
+  position: absolute;
+  width: 140px;
+  top: 60px;
+  right: 40px;
+}
+
+.responsiveNavContent {
+  width: 100%;
+  margin-top: 100px;
+  max-height: 700px;
+  overflow-y: scroll;
+}
+
+.responsiveNavRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  background: #f4f4f4;
+}
+.responsiveNavRow .responsiveNavBlock {
+  height: 100px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  margin: 10px;
+  background: white;
+}
+.responsiveNavRow::-webkit-scrollbar {
+  display: none;
+}
+
+.responsiveNavCome {
+  left: 0;
+}
+
+.responsiveNavBlock {
+  padding: 10px;
+}
+.responsiveNavBlock img {
+  display: block;
+  height: 40px;
+  margin: auto;
+}
+.responsiveNavBlock p {
+  font-size: 13px;
+  text-align: center;
+  margin: 0;
+  margin-top: 5px;
+  color: #9d9ea2;
+}
+
+.responsiveGoRow {
+  padding: 0 10px;
+}
+.responsiveGoRow .responsiveGo {
+  font-size: 17px;
+  color: #1a1e26;
+  margin: 10px 0;
+  font-family: main_m;
+}
+.responsiveGoRow .responsiveGo .responsiveGoB {
+  display: flex;
+  align-items: center;
+}
+.responsiveGoRow .responsiveGo .responsiveGoB img {
+  transition: 0.4s;
+}
+.responsiveGoRow .responsiveGo p {
+  margin: 0;
+}
+
+.responsiveSignIn {
+  padding: 15px 40px;
+  background: #17af26;
+  position: absolute;
+  bottom: 30px;
+  font-size: 16px;
+  color: white;
+  border: 0;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  font-family: main_r;
+}
+
+.responsiveTextStart {
+  color: #05422c;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .responsiveNav {
+    display: flex;
+  }
+  .navBurger {
+    display: flex;
+  }
+  nav .navContainer .navLogo img {
+    width: 120px;
+  }
+  nav .navContainer .navSearch {
+    display: none;
+  }
+  nav .navContainer .navOptions span {
+    font-size: 14px;
+  }
+  nav .navContainer .NavLineV {
+    margin: 0 10px;
+  }
+}

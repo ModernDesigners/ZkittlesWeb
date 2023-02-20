@@ -1,0 +1,29 @@
+.AlertSale {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #05422c;
+  font-family: main_r;
+  letter-spacing: 2px;
+}
+.AlertSale p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .AlertSale {
+    font-size: 12px;
+  }
+  .AlertSale p {
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+    overflow: hidden;
+  }
+}

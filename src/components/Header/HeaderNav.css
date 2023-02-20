@@ -1,0 +1,55 @@
+.header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.responsiveSearch {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .HeaderOption {
+    display: none;
+  }
+  .WebStarter {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: white;
+  }
+  .responsiveSearch {
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  .responsiveSearch input {
+    width: calc(100% - 60px);
+    height: 45px;
+    border: 2px solid #f4f4f4;
+    border-radius: 50px;
+    padding: 0 20px;
+    font-family: main_r;
+    font-size: 17px;
+  }
+  .responsiveSearch input:focus {
+    outline: none;
+  }
+  .responsiveSearch input::placeholder {
+    color: #c8c9cb;
+  }
+  .responsiveSearch button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    margin-left: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #17af26;
+    border: 0;
+  }
+}

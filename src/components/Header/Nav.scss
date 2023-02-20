@@ -1,0 +1,223 @@
+@import "../../colors.scss";
+
+nav {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid $White_;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .navContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .navSearch {
+            display: flex;
+            align-items: center;
+            input {
+                width: 400px;
+                height: 48px;
+                border: 2px solid $White_;
+                border-radius: 50px;
+                padding: 0 20px;
+                font-family: main_r;
+                font-size: 17px;
+                &:focus {
+                    outline: none;
+                }
+                &::placeholder {
+                    color: $Placeholder;
+                }
+            }
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 48px;
+                margin-left: 10px;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                background: $Lime;
+                border: 0;
+            }
+        }
+        .navOptions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span {
+                font-family: main_r;
+                color: $NavGray;
+                cursor: pointer;
+            }
+            .NavLineV {
+                height: 20px;
+                width: 1px;
+                background: $Placeholder;
+                margin: 0 20px;
+            }
+            .CartNav {
+                cursor: pointer;
+            }
+        }
+    }
+}
+.navBurger {
+    display: none;
+    height: 30px;
+    aspect-ratio: 1;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 99;
+    span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin: 2.5px;
+        background: $PGreen;
+        border-radius: 20px;
+        transition: 0.4s;
+    }
+}
+.navBurgerActive {
+    span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    span:nth-child(2) {
+        opacity: 0;
+        transform: rotate(-45deg);
+    }
+    span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+.responsiveNav {
+    display: none;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    width: 300px;
+    background: white;
+    height: 100%;
+    top: 0;
+    z-index: 98;
+    left: -400px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+    transition: 0.7s ease-in-out;
+    .responsiveNavLogo {
+        position: absolute;
+        width: 140px;
+        top: 60px;
+        right: 40px;
+    }
+}
+.responsiveNavContent {
+    width: 100%;
+    margin-top: 100px;
+    max-height: 700px;
+    overflow-y: scroll;
+}
+
+.responsiveNavRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    background: $White_;
+    .responsiveNavBlock {
+        height: 100px;
+        aspect-ratio: 1;
+        border-radius: 20px;
+        margin: 10px;
+        background: white;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.responsiveNavCome {
+    left: 0;
+}
+
+.responsiveNavBlock {
+    padding: 10px;
+    img {
+        display: block;
+        height: 40px;
+        margin: auto;
+    }
+    p {
+        font-size: 13px;
+        text-align: center;
+        margin: 0;
+        margin-top: 5px;
+        color: $Black_;
+    }
+}
+.responsiveGoRow {
+    padding: 0 10px;
+    .responsiveGo {
+        .responsiveGoB {
+            display: flex;
+            align-items: center;
+            img {
+                transition: 0.4s;
+            }
+        }
+        font-size: 17px;
+        color: $Black;
+        margin: 10px 0;
+        font-family: main_m;
+        p {
+            margin: 0;
+        }
+    }
+}
+.responsiveSignIn {
+    padding: 15px 40px;
+    background: $Lime;
+    position: absolute;
+    bottom: 30px;
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    font-family: main_r;
+}
+.responsiveTextStart {
+    color: $PGreen;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+@media (max-width: 600px) {
+    .responsiveNav {
+        display: flex;
+    }
+    .navBurger {
+        display: flex;
+    }
+    nav {
+        .navContainer {
+            .navLogo {
+                img {
+                    width: 120px;
+                }
+            }
+            .navSearch {
+                display: none;
+            }
+            .navOptions {
+                span {
+                    font-size: 14px;
+                }
+            }
+            .NavLineV {
+                margin: 0 10px;
+            }
+        }
+    }
+}

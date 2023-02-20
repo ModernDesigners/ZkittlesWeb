@@ -1,0 +1,66 @@
+@import "./colors.scss";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+@font-face {
+  font-family: main_r;
+  src: url("./fonts/Lexend-Regular.ttf");
+}
+@font-face {
+  font-family: main_m;
+  src: url("./fonts/Lexend-Medium.ttf");
+}
+@font-face {
+  font-family: main_bold;
+  src: url("./fonts/Lexend-Bold.ttf");
+}
+@font-face {
+  font-family: main_sb;
+  src: url("./fonts/Lexend-SemiBold.ttf");
+}
+
+.container {
+  max-width: 90% !important;
+}
+h1 {
+  font-family: main_bold;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: -4px;
+  color: $White_;
+}
+h2 {
+  font-family: main_bold;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -1.5px;
+  color: $White_;
+}
+h3 {
+  font-family: main_m;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.5px;
+  color: $Black;
+}
+h4 {
+  font-family: main_m;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 150%;
+  color: $Black;
+}
+p {
+  font-family: main_r;
+  font-size: 16px;
+  line-height: 150%;
+  color: $Pgrey;
+}

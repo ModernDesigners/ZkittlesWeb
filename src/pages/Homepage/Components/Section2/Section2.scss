@@ -1,0 +1,52 @@
+.section2-main {
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+  padding: 20px 0;
+
+  .section2-leftsidecard {
+    padding: 0px;
+    width: 379px;
+    min-width: 379px;
+    height: 568px;
+    background: #05422c;
+    border-radius: 16px;
+    .section2-leftsidecard-image {
+      img {
+        position: relative;
+        z-index: 1;
+      }
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      .section2-leftside-whitebg {
+        position: absolute;
+        left: 173.33px;
+        top: -102px;
+        width: 261.68px;
+        height: 371px;
+
+        background: linear-gradient(180deg, rgba(52, 102, 84, 0) 0%, rgba(52, 102, 84, 0.2) 100%);
+        border-radius: 12px;
+        transform: rotate(5deg);
+      }
+    }
+    .section2-leftsidecard-text {
+      text-align: center;
+      padding: 0px 35px;
+      h3 {
+        color: #fff;
+      }
+      p {
+        margin: 10px 0px 30px 0px;
+      }
+      a {
+        font-size: 14px;
+        color: #17af26;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@import "../../../../colors.scss";
+.Section {
+    background: conic-gradient(
+        from 180deg at 50% 50%,
+        rgba(5, 66, 44, 0.6) -4.67deg,
+        #05422c 299.08deg,
+        rgba(5, 66, 44, 0.6) 355.33deg,
+        #05422c 659.08deg
+    );
+    padding: 150px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SectionSplitter {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.textSide {
+    .starterAction {
+        color: $Yellow;
+        font-family: main_r;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .starterName {
+        color: $White;
+        letter-spacing: 2px;
+        font-family: main_sb;
+    }
+    .starterAddons {
+        color: $White_;
+        letter-spacing: 2px;
+        font-family: main_r;
+    }
+}
+.starterSale {
+    display: flex;
+    align-items: center;
+    color: $White;
+    font-family: main_m;
+    font-size: 20px;
+    margin-top: 80px;
+    .starterLineV {
+        height: 20px;
+        width: 1px;
+        background: $Placeholder;
+        margin: 0 20px;
+    }
+}
+.starterButton {
+    font-family: main_r;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+    background: $Lime;
+    color: white;
+    border: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.starterImage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+@media (max-width: 600px) {
+    .starterSale {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    .starterButton {
+        font-size: 16px;
+    }
+    .Section {
+        padding: 50px 0;
+        margin-top: 180px;
+        padding-bottom: 320px;
+    }
+    .starterImage {
+        position: absolute;
+        bottom: 0;
+        right: auto;
+        width: 100%;
+        max-width: 450px;
+    }
+    .textSide {
+        .starterAction {
+            font-size: 14px;
+        }
+        .starterName {
+            font-size: 32px;
+        }
+        .starterAddons {
+            font-size: 16px;
+        }
+    }
+}
