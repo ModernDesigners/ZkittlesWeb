@@ -1,6 +1,7 @@
 import React from "react";
-import girchi from "../../../../../images/girchi.png";
-import star_ from "../../../../../images/icons/star.png";
+import girchi from "../../images/girchi.png";
+import star_ from "../../images/icons/star.png";
+
 import "./productcard.css";
 
 interface ProductCard {

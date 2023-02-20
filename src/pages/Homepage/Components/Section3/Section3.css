@@ -1,0 +1,101 @@
+.section3 {
+  padding: 50px 0px 100px 0px;
+}
+.section3 .section3-headerh1 {
+  color: #1a1e26;
+  margin-bottom: 70px;
+}
+.section3 .section3-main {
+  display: flex;
+  gap: 30px;
+}
+.section3 .section3-main .section3-leftside-card {
+  padding: 40px;
+  gap: 32px;
+  width: 379px;
+  height: 424px;
+  /* Secondary/500 */
+  background: #05422c;
+  border-radius: 16px;
+}
+.section3 .section3-main .section3-leftside-card .section3-line {
+  width: 100%;
+  background-color: #346654;
+  margin: 32px 0px;
+  height: 1px;
+}
+.section3 .section3-main .section3-leftside-card img {
+  margin-bottom: 20px;
+}
+.section3 .section3-main .section3-leftside-card h3 {
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  transform: translateY(4px);
+}
+.section3 .section3-main .section3-leftside-card .section3-leftside-rating {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.section3 .section3-main .section3-leftside-card .section3-leftside-rating img {
+  margin-bottom: 0px;
+  margin-right: 3px;
+}
+.section3 .section3-main .section3-leftside-card .section3-leftside-rating .section3-small-line {
+  margin: 0px 20px;
+  width: 12px;
+  height: 0px;
+  border: 1px solid #648a7c;
+  transform: rotate(90deg);
+}
+.section3 .section3-main .section3-leftside-card .section3-leftside-rating p {
+  margin: 0px 0px 0px 5px;
+}
+.section3 .section3-main .section3-card {
+  padding: 40px;
+  gap: 32px;
+  width: 379px;
+  height: 424px;
+  background: #ffffff;
+  border: 1px solid #f4f4f4;
+  border-radius: 16px;
+  border: 1px solid rgb(244, 244, 244);
+  position: relative;
+}
+.section3 .section3-main .section3-card .section3-card-header .section3-card-user {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.section3 .section3-main .section3-card .section3-card-header .section3-card-user h4 {
+  margin-bottom: 0px;
+}
+.section3 .section3-main .section3-card .section3-card-header .section3-card-user img {
+  width: 47.4px;
+  height: 47.74px;
+}
+.section3 .section3-main .section3-card .section3-card-header .section3-card-line {
+  width: 100%;
+  margin: 33px 0px;
+  height: 0px;
+  border: 1px solid rgba(200, 201, 203, 0.6901960784);
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.section3 .section3-main .section3-card .section3-card-text .stars {
+  display: flex;
+  gap: 5px;
+}
+.section3 .section3-main .section3-card .section3-card-text h4 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.section3 .section3-main .section3-card .section3-card-text p {
+  position: absolute;
+  bottom: 10px;
+  color: #9d9ea2;
+  font-size: 14px;
+}/*# sourceMappingURL=Section3.css.map */

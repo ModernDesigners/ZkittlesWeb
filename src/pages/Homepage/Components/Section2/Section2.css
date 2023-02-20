@@ -1,3 +1,56 @@
+.section2 {
+  padding: 100px 0px;
+}
+
+.section2-header {
+  text-align: center;
+  padding: 0px 50px;
+}
+.section2-header h1 {
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -4px;
+  color: #1a1e26;
+  width: 948px;
+  margin: auto;
+}
+.section2-header .section2-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 65px 0px;
+}
+.section2-header .section2-filter div:nth-child(1) {
+  border: 1px solid #05422c;
+  background: #f2f6f4;
+}
+.section2-header .section2-filter div:nth-child(1) p {
+  color: #05422c;
+}
+.section2-header .section2-filter div {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 12px;
+  width: 378.67px;
+  height: 48px;
+  border-radius: 100px;
+  transition: 0.3s;
+  border: 1px solid #f4f4f4;
+}
+.section2-header .section2-filter div p {
+  margin-bottom: 0px;
+  transition: 0.3s;
+  color: black;
+}
+.section2-header .section2-filter div:hover {
+  border: 1px solid #0a4832;
+  background: #f2f6f4;
+}
+
 .section2-main {
   display: flex;
   gap: 30px;
@@ -48,3 +101,23 @@
   font-size: 14px;
   color: #17af26;
 }
+.section2-main .section2-products-main {
+  display: flex;
+  gap: 30px;
+}
+.section2-main .section2-products-main .toLeft,
+.section2-main .section2-products-main .toRight {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+}
+.section2-main .section2-products-main .toLeft {
+  left: 200px;
+}/*# sourceMappingURL=Section2.css.map */

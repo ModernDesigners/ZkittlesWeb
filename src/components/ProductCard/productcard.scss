@@ -92,16 +92,15 @@
         gap: 20px;
         justify-content: center;
         div {
-          padding: 4px 10px 5px;
+          padding: 7px 10px;
           gap: 12px;
-          width: 50px;
-          height: 32px;
           background: #ffffff;
           border: 1px solid #f4f4f4;
           display: flex;
           justify-content: center;
           align-items: center;
           cursor: pointer;
+          border-radius: 5px;
           p {
             color: #1a1e26;
             margin-bottom: 0px;

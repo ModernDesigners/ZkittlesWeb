@@ -5,7 +5,12 @@ import HeaderNav from "./components/Header/HeaderNav";
 import "./container.css";
 import "./index.css";
 
-import { Section, Section1, Section2 } from "./pages/Homepage/Components";
+import {
+  Section,
+  Section1,
+  Section2,
+  Section3,
+} from "./pages/Homepage/Components";
 function App() {
   return (
     <div className="App">
@@ -13,6 +18,7 @@ function App() {
       <Section />
       <Section1 />
       <Section2 />
+      <Section3 />
     </div>
   );
 }

@@ -94,16 +94,15 @@
   justify-content: center;
 }
 .product-card .product-text .product-text-middle .product-weights div {
-  padding: 4px 10px 5px;
+  padding: 7px 10px;
   gap: 12px;
-  width: 50px;
-  height: 32px;
   background: #ffffff;
   border: 1px solid #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border-radius: 5px;
 }
 .product-card .product-text .product-text-middle .product-weights div p {
   color: #1a1e26;
@@ -125,4 +124,4 @@
   border: 0px;
   outline: none;
   margin: 20px auto;
-}
+}/*# sourceMappingURL=productcard.css.map */
