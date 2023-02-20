@@ -108,3 +108,31 @@
     }
   }
 }
+
+@media screen and (max-width: 990px) {
+  .section3 {
+    .section3-headerh1 {
+      width: 100%;
+      font-size: 40px;
+      text-align: center;
+      line-height: 150%;
+    }
+    .section3-main {
+      flex-direction: column;
+      align-items: center;
+
+      .section3-leftside-card {
+        height: auto;
+        width: 100%;
+        text-align: center;
+        .section3-leftside-rating {
+          justify-content: center;
+        }
+      }
+      .section3-card {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

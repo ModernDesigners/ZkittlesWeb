@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 291px;
+    width: 100%;
     height: 240px;
     background: #f4f4f4;
     position: relative;
@@ -38,6 +38,7 @@
       text-align: center;
       h3 {
         font-size: 18px;
+        height: 60px;
       }
       .product-rating {
         display: flex;

@@ -14,6 +14,8 @@ interface ProductCard {
   optional_addon: string;
   price: number;
   sizes: string[];
+  old_price?: string;
+  in_stock?: boolean;
 }
 
 export default function ProductCard({
@@ -26,6 +28,8 @@ export default function ProductCard({
   optional_addon,
   price,
   sizes,
+  old_price,
+  in_stock,
 }: ProductCard) {
   let opt_show = 0;
 
@@ -40,6 +44,11 @@ export default function ProductCard({
       <div className="product-card-image">
         <img src={girchi} alt="" />
         <div className="product-card-whitebg"></div>
+        {old_price ? null : (
+          <div className="out-of-stock">
+            <p>Out Of Stock</p>
+          </div>
+        )}
       </div>
       <div className="product-text">
         <div className="product-text-header">
@@ -59,7 +68,15 @@ export default function ProductCard({
         </div>
         <div className="product-text-middle">
           <h3>
-            ${price} <span>/ gram</span>
+            {old_price ? (
+              <>
+                <span>{old_price}</span> ${price}
+              </>
+            ) : (
+              <>
+                ${price} <span>/ gram</span>
+              </>
+            )}
           </h3>
           <div className="product-weights">
             {sizes.map((item, index) => (

@@ -1,0 +1,96 @@
+.section4 {
+  padding: 50px 0px 250px 0px;
+  position: relative;
+}
+.section4 .section4-header {
+  padding-bottom: 60px;
+}
+.section4 .section4-header h1 {
+  color: #1a1e26;
+  margin-bottom: 65px;
+}
+.section4 .section4-header .section4-filter {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.section4 .section4-header .section4-filter h3 {
+  transform: translateY(5px);
+}
+.section4 .section4-header .section4-filter div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #f4f4f4;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.section4 .section4-header .section4-filter div p {
+  margin-bottom: 0px;
+  color: #1a1e26;
+}
+.section4 .section4-header .section4-filter .active {
+  background: #f2f6f4;
+  border: 1px solid #05422c;
+}
+.section4 .section4-header .section4-filter .active p {
+  color: #05422c;
+  /* Secondary/500 */
+}
+.section4 .section4-main .product-card {
+  margin: 50px 0px;
+  width: 100%;
+}
+.section4 .section4-footer {
+  width: 90%;
+  height: 342px;
+  background: #05422c;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: -171px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section4 .section4-footer h1 {
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+.section4 .section4-footer h3 {
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+.section4 .section4-footer h3 span {
+  color: #f2bc1b;
+}
+.section4 .section4-footer button {
+  padding: 8px 56px;
+  gap: 8px;
+  width: 207px;
+  height: 64px;
+  background: #17af26;
+  border-radius: 100px;
+  color: #fff;
+  border: 0px;
+  outline: none;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1200px) {
+  .section4 h1 {
+    text-align: center;
+  }
+  .section4 .section4-main .product-card .product-text-header h3 {
+    font-size: 15px;
+  }
+  .section4 .section4-filter {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=Section4.css.map */

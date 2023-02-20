@@ -57,6 +57,7 @@ export default function Section2() {
                 reviews={item.reviews}
                 optional_addon={item.optional_addon}
                 price={item.price}
+                old_price={item.old_price}
                 sizes={item.sizes}
               />
             ))}

@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 291px;
+  width: 100%;
   height: 240px;
   background: #f4f4f4;
   position: relative;
@@ -39,6 +39,7 @@
 }
 .product-card .product-text .product-text-header h3 {
   font-size: 18px;
+  height: 60px;
 }
 .product-card .product-text .product-text-header .product-rating {
   display: flex;
