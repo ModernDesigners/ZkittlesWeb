@@ -48,7 +48,7 @@ const Products = [
     price: 8.99,
     old_price: "$200.00",
     sizes: ["Small", "Medium"],
-    in_stock: true,
+    in_stock: false,
   },
   {
     id: 5,
@@ -100,7 +100,7 @@ const Products = [
     price: 9.99,
     old_price: "$200.00",
     sizes: ["Small", "Large"],
-    in_stock: true,
+    in_stock: false,
   },
 ];
 

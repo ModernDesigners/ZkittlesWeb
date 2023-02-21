@@ -15,7 +15,7 @@ interface ProductCard {
   price: number;
   sizes: string[];
   old_price?: string;
-  in_stock?: boolean;
+  in_stock: boolean;
 }
 
 export default function ProductCard({
@@ -44,7 +44,7 @@ export default function ProductCard({
       <div className="product-card-image">
         <img src={girchi} alt="" />
         <div className="product-card-whitebg"></div>
-        {old_price ? null : (
+        {in_stock ? null : (
           <div className="out-of-stock">
             <p>Out Of Stock</p>
           </div>

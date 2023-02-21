@@ -18,6 +18,7 @@ export default function Header() {
               <img src={searchIcon} />
             </button>
           </div>
+
           <Option text="Shop All" />
           <Option
             dropdown={1}

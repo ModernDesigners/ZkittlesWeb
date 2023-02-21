@@ -68,6 +68,7 @@ export default function Section4() {
                   price={item.price}
                   old_price={item.old_price}
                   sizes={item.sizes}
+                  in_stock={item.in_stock}
                 />
               </Col>
             ))}

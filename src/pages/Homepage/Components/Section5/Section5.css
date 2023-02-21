@@ -1,4 +1,59 @@
 .section5 {
   background-color: #01100b;
-  height: 1000px;
+  padding: 350px 0px 100px 0px;
+}
+.section5 .section5-header {
+  width: 989px;
+  margin: auto;
+  max-width: 100%;
+}
+.section5 .section5-header h1 {
+  margin: auto;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section5 .section5-cards {
+  padding-top: 150px;
+}
+.section5 .section5-cards .section5-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.section5 .section5-cards .section5-card .section5-card-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.section5 .section5-cards .section5-card .section5-card-image .section5-id {
+  position: absolute;
+  left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 40px;
+  height: 40px;
+  background: #f2bc1b;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 50%;
+}
+.section5 .section5-cards .section5-card .section5-card-image .section5-id p {
+  margin-bottom: 0px;
+  color: #05422c;
+}
+.section5 .section5-cards .section5-card .section5-card-text {
+  text-align: center;
+}
+.section5 .section5-cards .section5-card .section5-card-text h3 {
+  color: #fff;
+  padding: 40px 0px 10px 0px;
+}
+.section5 .section5-cards .section5-card .section5-card-text p {
+  width: 548px;
+  max-width: 100%;
 }/*# sourceMappingURL=Section5.css.map */

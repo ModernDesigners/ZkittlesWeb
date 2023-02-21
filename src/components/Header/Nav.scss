@@ -105,7 +105,7 @@ nav {
     z-index: 98;
     left: -400px;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
-    transition: 0.7s ease-in-out;
+    transition: 0.5s ease-in-out;
     .responsiveNavLogo {
         position: absolute;
         width: 140px;
@@ -193,11 +193,13 @@ nav {
     margin-top: 20px;
     margin-bottom: 15px;
 }
-@media (max-width: 600px) {
+@media (max-width: 1316px) {
     .responsiveNav {
         display: flex;
     }
     .navBurger {
+        position: absolute;
+        left: 20px;
         display: flex;
     }
     nav {
@@ -205,6 +207,7 @@ nav {
             .navLogo {
                 img {
                     width: 120px;
+                    margin-left: 30px;
                 }
             }
             .navSearch {

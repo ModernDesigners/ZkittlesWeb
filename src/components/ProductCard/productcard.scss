@@ -31,6 +31,27 @@
       box-shadow: 0px 0px 20px rgba(229, 240, 236, 0.1);
       border-radius: 50%;
     }
+    .out-of-stock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      position: absolute;
+      width: 152px;
+      height: 64px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(26, 30, 38, 0.3);
+      backdrop-filter: blur(4px);
+      border-radius: 100px;
+      z-index: 2;
+      p {
+        color: #fff;
+        position: relative;
+        margin-bottom: 0px;
+      }
+    }
   }
   .product-text {
     .product-text-header {

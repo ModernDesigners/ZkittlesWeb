@@ -59,6 +59,7 @@ export default function Section2() {
                 price={item.price}
                 old_price={item.old_price}
                 sizes={item.sizes}
+                in_stock={item.in_stock}
               />
             ))}
           </div>
