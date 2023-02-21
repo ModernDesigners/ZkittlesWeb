@@ -1,12 +1,42 @@
-import React from "react";
+import { useRef } from "react";
 import "./Section3.css";
 import googleImage from "../../../../images/google.png";
+import { customersFeedbackAPI } from "../../../../api/customersFeedback";
+import { Container } from "react-bootstrap";
+import StarsCalc from "./components/StarsCalc";
 import star from "../../../../images/icons/star.png";
 import starAlt from "../../../../images/icons/starAlt.png";
-import user from "../../../../images/users/Avatar1.png";
-import { Container } from "react-bootstrap";
-
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 export default function Section3() {
+  let slider3 = useRef<any>(null);
+  let sliderRow3 = useRef<any>(null);
+  let feedBackCard = useRef<any>(null);
+
+  function rightClick() {
+    const scrollW = feedBackCard.current.clientWidth + 30;
+    let maxScroll =
+      sliderRow3.current.clientWidth - slider3.current.clientWidth;
+
+    if (slider3.current.scrollLeft == maxScroll) {
+      slider3.current.scrollLeft = 0;
+    } else if (
+      slider3.current.scrollLeft >
+      slider3.current.clientWidth - scrollW
+    ) {
+      slider3.current.scrollLeft = slider3.current.clientWidth;
+    } else {
+      slider3.current.scrollLeft += scrollW;
+    }
+  }
+
+  function leftClick() {
+    const scrollW = feedBackCard.current.clientWidth + 30;
+    if (slider3.current.scrollLeft == 0) {
+      slider3.current.scrollLeft = slider3.current.clientWidth;
+    } else {
+      slider3.current.scrollLeft -= scrollW;
+    }
+  }
   return (
     <section className="section3">
       <Container>
@@ -29,28 +59,34 @@ export default function Section3() {
               <p>Reviews</p>
             </div>
           </div>
-          <div className="section3-card">
-            <div className="section3-card-header">
-              <div className="section3-card-user">
-                <img src={user} alt="" />
-                <h4>Vikki Starr</h4>
-              </div>
-              <div className="section3-card-line"></div>
+          <div className="section3-slider">
+            <div className="toLeft" onClick={leftClick}>
+              <BsChevronLeft />
             </div>
-            <div className="section3-card-text">
-              <div className="stars">
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-                <img src={starAlt} alt="" />
+            <div className="toRight" onClick={rightClick}>
+              <BsChevronRight />
+            </div>
+            <div ref={slider3} className="section3-main-feedbacks">
+              <div ref={sliderRow3} className="section3-row">
+                {customersFeedbackAPI.map((item) => (
+                  <div ref={feedBackCard} className="section3-card">
+                    <div className="section3-card-header">
+                      <div className="section3-card-user">
+                        <img src={item.image} alt="" />
+                        <h4>{item.name}</h4>
+                      </div>
+                      <div className="section3-card-line"></div>
+                    </div>
+                    <div className="section3-card-text">
+                      <div className="stars">
+                        <StarsCalc stars={item.stars} maxStars={5} />
+                      </div>
+                      <h4>{item.feedback}</h4>
+                      <p>{item.date}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <h4>
-                Absolutely love TopShelfBC; affordable on any budget and such
-                fast delivery, straight to my door! I recommend them to all my
-                friends and family for their 420 needs.
-              </h4>
-              <p>January 15, 2023</p>
             </div>
           </div>
         </div>

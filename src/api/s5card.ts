@@ -1,7 +1,12 @@
+import imgIcon1 from "../images/back/Register.png";
+import imgIcon2 from "../images/back/Shop.png";
+import imgIcon3 from "../images/back/Payment.png";
+import imgIcon4 from "../images/back/Relax.png";
+
 export const S5CardAPI = [
   {
     id: 1,
-    image: "",
+    image: imgIcon1,
     title: "REGISTER",
     description: ` Sign up for an account
          with us. This is quick and 
@@ -13,7 +18,7 @@ export const S5CardAPI = [
 
   {
     id: 2,
-    image: "",
+    image: imgIcon2,
     title: "SHOP",
     description: ` Decide on what you want to purchase.
        We stock a wide range of edibles,flowers , concentrates 
@@ -22,7 +27,7 @@ export const S5CardAPI = [
 
   {
     id: 3,
-    image: "",
+    image: imgIcon3,
     title: "MAKE PAYMENT",
     description: ` Pay securely. Our site boasts sturdy
        protection certificates to keep your card details and related data safe.`,
@@ -30,7 +35,7 @@ export const S5CardAPI = [
 
   {
     id: 4,
-    image: "",
+    image: imgIcon4,
     title: "RELAX",
     description: ` Your product will
        be packaged discretely and shipped 

@@ -24,6 +24,7 @@
         border: 1px solid #f4f4f4;
         border-radius: 100px;
         cursor: pointer;
+        transition: 0.3s;
         p {
           margin-bottom: 0px;
           color: #1a1e26;
@@ -59,6 +60,10 @@
     bottom: -171px;
     left: 50%;
     transform: translateX(-50%);
+    background-image: url("/src/images/lines-section4-footer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     h1 {
       margin-bottom: 40px;
       color: #ffffff;

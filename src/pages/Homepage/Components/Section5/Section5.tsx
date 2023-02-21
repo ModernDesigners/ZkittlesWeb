@@ -3,6 +3,7 @@ import "./Section5.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { S5CardAPI } from "../../../../api/s5card";
 import s5image from "../../../../images/section5card.png";
+
 export default function Section5() {
   return (
     <section className="section5">
@@ -25,7 +26,7 @@ export default function Section5() {
                 <Col lg={6} md={6} sm={6}>
                   <div className="section5-card">
                     <div className="section5-card-image">
-                      <img src={s5image} alt="" />
+                      <img src={e.image} alt="" />
                       <div className="section5-id">
                         <p>{e.id}</p>
                       </div>

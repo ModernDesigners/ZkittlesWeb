@@ -27,6 +27,7 @@
   border: 1px solid #f4f4f4;
   border-radius: 100px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .section4 .section4-header .section4-filter div p {
   margin-bottom: 0px;
@@ -56,6 +57,10 @@
   bottom: -171px;
   left: 50%;
   transform: translateX(-50%);
+  background-image: url("/src/images/lines-section4-footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .section4 .section4-footer h1 {
   margin-bottom: 40px;
@@ -93,4 +98,4 @@
   .section4 .section4-filter {
     flex-wrap: wrap;
   }
-}/*# sourceMappingURL=Section4.css.map */
+}

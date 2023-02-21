@@ -12,6 +12,8 @@ import {
   Section3,
   Section4,
   Section5,
+  Section6,
+  Section7,
 } from "./pages/Homepage/Components";
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <Section3 />
       <Section4 />
       <Section5 />
+      <Section6 />
+      <Section7 />
     </div>
   );
 }

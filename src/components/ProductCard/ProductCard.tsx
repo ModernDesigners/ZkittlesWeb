@@ -5,6 +5,7 @@ import star_ from "../../images/icons/star.png";
 import "./productcard.css";
 
 interface ProductCard {
+  reffer?: any;
   id: number;
   image: string;
   type: string;
@@ -19,6 +20,7 @@ interface ProductCard {
 }
 
 export default function ProductCard({
+  reffer,
   id,
   image,
   type,
@@ -40,7 +42,7 @@ export default function ProductCard({
   }
 
   return (
-    <div className="product-card">
+    <div ref={reffer} className="product-card">
       <div className="product-card-image">
         <img src={girchi} alt="" />
         <div className="product-card-whitebg"></div>

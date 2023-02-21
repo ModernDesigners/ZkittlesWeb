@@ -101,23 +101,42 @@
   font-size: 14px;
   color: #17af26;
 }
-.section2-main .section2-products-main {
+.section2-main .section2-products-main-slider {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
-.section2-main .section2-products-main .toLeft,
-.section2-main .section2-products-main .toRight {
+.section2-main .section2-products-main-slider .toLeft,
+.section2-main .section2-products-main-slider .toRight {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 20px;
+  right: 30px;
   width: 36px;
   height: 36px;
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  z-index: 8;
 }
-.section2-main .section2-products-main .toLeft {
-  left: 200px;
-}/*# sourceMappingURL=Section2.css.map */
+.section2-main .section2-products-main-slider .toLeft {
+  left: 30px;
+}
+.section2-main .section2-products-main-slider .section2-products-main {
+  display: flex;
+  align-items: center;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+}
+.section2-main .section2-products-main-slider .section2-products-main::-webkit-scrollbar {
+  display: none;
+}
+.section2-main .section2-products-main-slider .section2-products-main .section2-products-main-row {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
