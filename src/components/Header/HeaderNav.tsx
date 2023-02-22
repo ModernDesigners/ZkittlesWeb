@@ -2,7 +2,7 @@ import Option from "./components/Option";
 import "./HeaderNav.css";
 import searchIcon from "../../images/icons/Search.png";
 import Nav from "./Nav";
-import AlertSale from "../AlertSale";
+import AlertSale from "../AlertSale/AlertSale";
 
 export default function Header() {
   return (

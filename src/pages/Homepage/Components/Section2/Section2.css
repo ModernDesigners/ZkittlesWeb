@@ -12,6 +12,7 @@
   letter-spacing: -4px;
   color: #1a1e26;
   width: 948px;
+  max-width: 100%;
   margin: auto;
 }
 .section2-header .section2-filter {
@@ -140,3 +141,10 @@
   gap: 30px;
   align-items: center;
 }
+
+@media screen and (max-width: 991px) {
+  .section2 .section2-header h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=Section2.css.map */

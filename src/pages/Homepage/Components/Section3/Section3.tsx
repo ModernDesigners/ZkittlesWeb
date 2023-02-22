@@ -5,7 +5,7 @@ import { customersFeedbackAPI } from "../../../../api/customersFeedback";
 import { Container } from "react-bootstrap";
 import StarsCalc from "./components/StarsCalc";
 import star from "../../../../images/icons/star.png";
-import starAlt from "../../../../images/icons/starAlt.png";
+
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 export default function Section3() {
   let slider3 = useRef<any>(null);

@@ -1,0 +1,7 @@
+.ProductPage_content {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: start;
+  margin-top: 40px;
+}

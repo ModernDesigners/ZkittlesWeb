@@ -1,0 +1,84 @@
+.price_review_splitter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.price_review_splitter .price h3 {
+  color: #eb2606;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.price_review_splitter .price h3 span {
+  text-decoration: line-through;
+  color: #c8c9cb;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.product-ratingPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-ratingPage .sm-line {
+  margin: 0px 5px;
+  width: 12px;
+  height: 0px;
+  border: 1px solid #c8c9cb;
+  transform: rotate(90deg);
+}
+.product-ratingPage h4 {
+  font-size: 16px;
+  margin: 0px 10px;
+}
+.product-ratingPage p {
+  color: rgb(200, 201, 203);
+  font-size: 16px;
+  margin: 0;
+}
+
+.line_Split {
+  height: 2px;
+  width: 100%;
+  margin: 10px 0;
+  background: #f4f4f4;
+}
+
+.Detail_Addons {
+  width: 100%;
+  padding: 20px 30px;
+  margin: 15px 0;
+  border: 2px solid #f4f4f4;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.Detail_Addons .Detail_Addon {
+  display: flex;
+  align-items: start;
+}
+.Detail_Addons .Detail_Addon .text_side {
+  margin-left: 15px;
+}
+.Detail_Addons .Detail_Addon .text_side p {
+  margin: 0;
+}
+.Detail_Addons .Detail_Addon .text_side .Name_Addon {
+  margin-bottom: 6px;
+}
+.Detail_Addons .Detail_Addon .text_side .Get_Addon {
+  color: #060709;
+}
+
+.p_desc_title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.p_desc {
+  color: #46494f;
+}

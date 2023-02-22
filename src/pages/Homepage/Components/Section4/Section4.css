@@ -99,3 +99,20 @@
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 1200px) {
+  .section4-footer h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section4-footer {
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center !important;
+    text-align: center;
+  }
+  .section4-footer h1 {
+    margin-bottom: 0px !important;
+  }
+}/*# sourceMappingURL=Section4.css.map */

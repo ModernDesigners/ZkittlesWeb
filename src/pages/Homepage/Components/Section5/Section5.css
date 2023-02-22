@@ -38,7 +38,8 @@
   width: 40px;
   height: 40px;
   background: #f2bc1b;
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   border-radius: 50%;
 }
 .section5 .section5-cards .section5-card .section5-card-image .section5-id p {
@@ -53,6 +54,22 @@
   padding: 40px 0px 10px 0px;
 }
 .section5 .section5-cards .section5-card .section5-card-text p {
-  width: 548px;
+  width: 408px;
   max-width: 100%;
 }
+
+@media screen and (max-width: 991px) {
+  .section5 .section5-header {
+    text-align: center;
+  }
+  .section5 .section5-header h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+  .section5-card-text {
+    text-align: center;
+  }
+  .section5-card-text p {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=Section5.css.map */

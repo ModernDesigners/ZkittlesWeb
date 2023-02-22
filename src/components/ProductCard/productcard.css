@@ -79,7 +79,7 @@
   margin: 0px 10px;
 }
 .product-card .product-text .product-text-header .product-rating p {
-  transform: translateY(6px);
+  margin: 0;
   color: rgb(200, 201, 203);
 }
 .product-card .product-text .product-text-header .sativa-procentage {
@@ -110,6 +110,7 @@
 .product-card .product-text .product-text-middle h3 span {
   color: #c8c9cb;
   font-size: 14px;
+  text-decoration: line-through;
 }
 .product-card .product-text .product-text-middle .product-weights {
   display: flex;

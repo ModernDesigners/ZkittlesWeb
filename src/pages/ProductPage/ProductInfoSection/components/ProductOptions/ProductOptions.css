@@ -1,0 +1,13 @@
+.FirstOptions {
+  display: flex;
+  align-items: center;
+}
+
+.F_Splitted_Row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.F_Splitted_Row .F_Option {
+  padding: 4px 14px 5px;
+}

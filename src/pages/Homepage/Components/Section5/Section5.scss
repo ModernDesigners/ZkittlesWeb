@@ -49,10 +49,29 @@
           padding: 40px 0px 10px 0px;
         }
         p {
-          width: 548px;
+          width: 408px;
           max-width: 100%;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section5 {
+    .section5-header {
+      text-align: center;
+      h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .section5-card-text {
+    text-align: center;
+
+    p {
+      width: 100% !important;
     }
   }
 }

@@ -1,0 +1,41 @@
+.Head_Image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 200px;
+  border-radius: 20px;
+  border: 2px solid #f4f4f4;
+}
+.Head_Image img {
+  height: 300px;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.Select_Images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.Select_Images .Image_Selector {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background: #f4f4f4;
+  padding: 10px;
+}
+.Select_Images .Image_Selector img {
+  height: 100%;
+}
+.Select_Images .Image_Selector:hover {
+  border: 2px solid #17af26;
+}
+.Select_Images .Image_SelectorActive {
+  border: 2px solid #17af26;
+}

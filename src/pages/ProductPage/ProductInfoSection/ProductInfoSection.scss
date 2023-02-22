@@ -1,0 +1,20 @@
+@import "../../../colors.scss";
+.ProductInfoSection {
+    width: 550px;
+    p {
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+    h2 {
+        color: $Black;
+    }
+    .addons_row {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+        .addon_ {
+            letter-spacing: 1px;
+        }
+    }
+}
