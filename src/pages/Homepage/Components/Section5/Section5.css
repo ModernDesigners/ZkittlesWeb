@@ -38,8 +38,7 @@
   width: 40px;
   height: 40px;
   background: #f2bc1b;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   border-radius: 50%;
 }
 .section5 .section5-cards .section5-card .section5-card-image .section5-id p {
@@ -72,4 +71,4 @@
   .section5-card-text p {
     width: 100% !important;
   }
-}/*# sourceMappingURL=Section5.css.map */
+}

@@ -24,10 +24,6 @@ export default function ImageSection() {
     {
       image: girchi,
     },
-
-    {
-      image: girchi,
-    },
   ];
   return (
     <div className="ImageSection">

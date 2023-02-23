@@ -1,0 +1,43 @@
+@import "../../../../../../../colors.scss";
+
+.ProductSelectors {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .ProductSelector {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: main_r;
+        font-size: 16px;
+        border: 2px solid $White_;
+        border-radius: 40px;
+        padding: 10px 35px;
+        color: $NavGray;
+        cursor: pointer;
+        transition: 0.4s;
+        user-select: none;
+        &:hover {
+            border-color: $PGreen;
+            color: $PGreen;
+            background: $Green_;
+        }
+    }
+    .ProductSelectorActive {
+        border-color: $PGreen;
+        color: $PGreen;
+        background: $Green_;
+    }
+}
+.line_Split_margin {
+    margin: 20px 0;
+}
+@media (max-width: 585px) {
+    .ProductSelectors {
+        // flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}

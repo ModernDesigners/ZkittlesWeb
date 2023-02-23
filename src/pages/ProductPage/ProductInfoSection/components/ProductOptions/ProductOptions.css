@@ -9,5 +9,134 @@
   gap: 12px;
 }
 .F_Splitted_Row .F_Option {
-  padding: 4px 14px 5px;
+  background: #f4f4f4;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-family: main_r;
+  color: #060709;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #f4f4f4;
+  transition: 0.2s;
+}
+.F_Splitted_Row .F_Option_Active {
+  border: 2px solid #17af26;
+  background: #f3fbf4;
+}
+.F_Splitted_Row .F_Weight {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: main_r;
+  color: #060709;
+}
+.F_Splitted_Row .F_Weight .F_Checker {
+  cursor: pointer;
+  height: 18px;
+  aspect-ratio: 1;
+  border-radius: 5px;
+  background: transparent;
+  margin-right: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f4f4f4;
+  transition: 0.2s;
+}
+.F_Splitted_Row .F_Weight .F_Checker svg {
+  display: none;
+}
+.F_Splitted_Row .F_Weight .F_Checked {
+  background: #17af26;
+  border: 2px solid #17af26;
+}
+.F_Splitted_Row .F_Weight .F_Checked svg {
+  display: block;
+}
+.F_Splitted_Row:nth-child(2) {
+  gap: 25px;
+}
+
+.addon_alert {
+  display: inline-block;
+  padding: 7px 15px;
+  background: #fef8e8;
+  color: #46494f;
+  font-family: main_r;
+  font-size: 14px;
+  margin-top: 30px;
+  border-radius: 40px;
+}
+.addon_alert span {
+  color: #eb2606;
+}
+
+.little_details {
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  margin-top: 20px;
+}
+.little_details .little_dets {
+  display: flex;
+  align-items: center;
+}
+.little_details .little_dets .little_question {
+  font-family: main_l;
+  color: #717378;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.little_details .little_dets .little_answer {
+  font-family: main_r;
+  color: #060709;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.little_details .little_dets .little_answer span {
+  color: #17af26;
+}
+
+@media (max-width: 545px) {
+  .F_Splitted_Row {
+    justify-content: center;
+  }
+  .little_details {
+    flex-direction: column;
+    align-items: start;
+    padding: 0 20px;
+  }
+  .Head_Image {
+    padding: 100px 0;
+  }
+  .FirstOptions {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .addon_alert {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 345px;
+  }
+  .refferalUrlBlock .content .start {
+    font-size: 12px;
+  }
+  .refferalUrlBlock .content .desc {
+    font-size: 12px;
+  }
+}
+@media (max-width: 689px) {
+  .socialRow {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .inpRowwer {
+    flex-direction: column;
+  }
 }

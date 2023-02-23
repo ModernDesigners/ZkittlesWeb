@@ -39,3 +39,13 @@
 .Select_Images .Image_SelectorActive {
   border: 2px solid #17af26;
 }
+
+@media (max-width: 714px) {
+  .ImageSection {
+    width: 100%;
+  }
+  .Head_Image {
+    width: 100%;
+    margin: auto;
+  }
+}

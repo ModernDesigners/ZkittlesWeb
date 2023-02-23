@@ -8,6 +8,140 @@
     align-items: center;
     gap: 12px;
     .F_Option {
-        padding: 4px 14px 5px;
+        background: $White_;
+        padding: 6px 14px;
+        font-size: 12px;
+        font-family: main_r;
+        color: $BlackAlt;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 2px solid $White_;
+        transition: 0.2s;
+    }
+    .F_Option_Active {
+        border: 2px solid $Lime;
+        background: $Lime_;
+    }
+    .F_Weight {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-family: main_r;
+        color: $BlackAlt;
+
+        .F_Checker {
+            cursor: pointer;
+            height: 18px;
+            aspect-ratio: 1;
+            border-radius: 5px;
+            background: transparent;
+            margin-right: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $White_;
+            transition: 0.2s;
+            svg {
+                display: none;
+            }
+        }
+        .F_Checked {
+            background: $Lime;
+            border: 2px solid $Lime;
+
+            svg {
+                display: block;
+            }
+        }
+    }
+    &:nth-child(2) {
+        gap: 25px;
+    }
+}
+
+.addon_alert {
+    display: inline-block;
+    padding: 7px 15px;
+    background: $Yellow_;
+    color: $NavGray;
+    font-family: main_r;
+    font-size: 14px;
+    margin-top: 30px;
+    border-radius: 40px;
+    span {
+        color: $Red;
+    }
+}
+.little_details {
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    margin-top: 20px;
+    .little_dets {
+        display: flex;
+        align-items: center;
+        .little_question {
+            font-family: main_l;
+            color: $Pgrey;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .little_answer {
+            font-family: main_r;
+            color: $BlackAlt;
+            font-size: 15px;
+            padding-left: 10px;
+            span {
+                color: $Lime;
+            }
+        }
+    }
+}
+
+@media (max-width: 545px) {
+    .F_Splitted_Row {
+        justify-content: center;
+    }
+    .little_details {
+        flex-direction: column;
+        align-items: start;
+        padding: 0 20px;
+    }
+    .Head_Image {
+        padding: 100px 0;
+    }
+    .FirstOptions {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    .addon_alert {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        width: 345px;
+    }
+    .refferalUrlBlock {
+        .content {
+            .start {
+                font-size: 12px;
+            }
+            .desc {
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media (max-width: 689px) {
+    .socialRow {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .inpRowwer {
+        flex-direction: column;
     }
 }

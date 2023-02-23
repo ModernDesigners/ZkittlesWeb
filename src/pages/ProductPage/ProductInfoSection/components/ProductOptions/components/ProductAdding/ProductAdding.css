@@ -1,0 +1,22 @@
+.ProductAdding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+.ProductAdding .Getter {
+  display: flex;
+  align-items: center;
+  font-family: main_r;
+  font-size: 14px;
+}
+.ProductAdding .Getter .name {
+  color: #46494f;
+}
+.ProductAdding .Getter .times {
+  color: #9d9ea2;
+  margin-left: 10px;
+}
+.ProductAdding .Getter .price {
+  color: #060709;
+}

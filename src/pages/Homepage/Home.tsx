@@ -1,19 +1,33 @@
 import React from "react";
+import Footer from "../../components/Footer/Footer";
 import HeaderNav from "../../components/Header/HeaderNav";
 import {
-  Footer,
+  Section,
   Section1,
   Section2,
   Section3,
   Section4,
   Section5,
   Section6,
+  Section7,
+  Section8,
+  Section9,
 } from "./Components";
 
-export default function Home() {
+export default function Home(props: { myCart: any }) {
   return (
     <>
-      <HeaderNav />
+      <HeaderNav myCart={props.myCart} />
+      <Section />
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Section7 />
+      <Section8 />
+      <Section9 />
       <Footer />
     </>
   );

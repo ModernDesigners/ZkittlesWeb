@@ -1,0 +1,54 @@
+.ProductsRow {
+  margin-top: 30px;
+}
+.ProductsRow .starter {
+  font-size: 24px;
+  font-family: main_r;
+  color: #060709;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+}
+.ProductsRow .ProductsRowwer {
+  display: flex;
+  align-items: center;
+}
+
+.section2-products-main-slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.section2-products-main-slider .toLeft,
+.section2-products-main-slider .toRight {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 30px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  z-index: 8;
+}
+.section2-products-main-slider .toLeft {
+  left: 30px;
+}
+.section2-products-main-slider .section2-products-main {
+  display: flex;
+  align-items: center;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+}
+.section2-products-main-slider .section2-products-main::-webkit-scrollbar {
+  display: none;
+}
+.section2-products-main-slider .section2-products-main .section2-products-main-row {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}

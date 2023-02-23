@@ -1,0 +1,175 @@
+@import "../../../../../../../../colors.scss";
+.ProductReferFriend {
+    border-radius: 15px;
+    border: 2px solid $White_;
+    padding: 20px;
+    .ReferStarter {
+        .start {
+            letter-spacing: 1px;
+            font-family: main_r;
+            font-size: 20px;
+            color: $BlackAlt;
+        }
+        .desc {
+            letter-spacing: 1px;
+            font-family: main_r;
+            font-size: 16px;
+            color: $Pgrey;
+        }
+    }
+}
+.refferalUrlBlock {
+    width: 100%;
+    background: $Lime_;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 85px;
+    margin: 15px 0;
+    padding-right: 50px;
+    position: relative;
+    .lineB {
+        height: 100%;
+        border-radius: 5px;
+        width: 3px;
+        background: $Red;
+    }
+    .content {
+        margin-left: 10px;
+        p {
+            margin: 0;
+        }
+        .start {
+            color: $NavGray;
+            font-size: 14px;
+            letter-spacing: 1px;
+            font-family: main_l;
+        }
+        .desc {
+            color: $BlackAlt;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-family: main_r;
+        }
+    }
+    .copyUrl {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 10px;
+        height: 40px;
+        aspect-ratio: 1;
+        background: white;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            background: $Lime_;
+        }
+    }
+}
+.socialRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .socialBlock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 15px;
+        border-radius: 15px;
+        border: 2px solid $White_;
+        .img_block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+        }
+        .fbb {
+            background: #edf4ff;
+        }
+        .tbb {
+            background: #eefbff;
+        }
+        .wbb {
+            background: #ecfff5;
+        }
+        p {
+            margin: 0;
+            margin-top: 15px;
+            color: $NavGray;
+            font-family: main_r;
+            font-size: 14px;
+            letter-spacing: 0px;
+        }
+    }
+}
+.ligher {
+    text-align: center;
+    color: $Placeholder;
+    font-family: main_r;
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin-top: 40px;
+}
+.inpRowwer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    margin-top: 20px;
+    .labelInp {
+        .label {
+            color: $NavGray;
+            font-size: 14px;
+            font-family: main_r;
+            letter-spacing: 0px;
+            margin-bottom: 5px;
+        }
+        input {
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: 2px solid $White_;
+            font-family: main_r;
+            color: $BlackAlt;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                font-family: main_r;
+                color: $Placeholder;
+            }
+        }
+    }
+    .addPlus {
+        position: absolute;
+        right: 10px;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: $Lime_;
+    }
+}
+.inpRw1 {
+    margin-top: 10px;
+}
+.sendMailButton {
+    font-family: main_r;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: $Lime;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}

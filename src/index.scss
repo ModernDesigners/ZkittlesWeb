@@ -4,8 +4,23 @@
   padding: 0px;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 15px;
+  background: $White_;
+}
+::-webkit-scrollbar-thumb {
+  background: $PGreenAlt2;
+}
+*::selection {
+  background: $PGreenAlt;
+  color: white;
+}
 body {
   margin: 0;
+}
+@font-face {
+  font-family: main_l;
+  src: url("./fonts/Lexend-Light.ttf");
 }
 @font-face {
   font-family: main_r;
@@ -69,4 +84,15 @@ p {
   padding: 4px 16px 5px;
   border-radius: 8px;
   color: rgb(5, 66, 44);
+}
+.ButtonExample {
+  font-family: main_r;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background: $Lime;
+  color: white;
+  border: 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 20px;
 }

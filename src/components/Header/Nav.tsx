@@ -7,7 +7,14 @@ import TruckImage from "../../images/icons/Truck.png";
 import GreenImage from "../../images/icons/Green.png";
 import CoinImage from "../../images/icons/Coin.png";
 import ResponsiveGo from "./components/ResponsiveGo";
-export default function Nav() {
+export default function Nav(props: { myCart: any }) {
+  const openCart = () => {
+    props.myCart.current.style.display = "block";
+
+    setTimeout(() => {
+      props.myCart.current.classList.add("active");
+    }, 10);
+  };
   const [navActive, setNavActive] = useState<boolean>(false);
   return (
     <nav>
@@ -32,7 +39,7 @@ export default function Nav() {
         <div className="navOptions">
           <span>Your Account</span>
           <div className="NavLineV"></div>
-          <div className="CartNav">
+          <div className="CartNav" onClick={openCart}>
             <img src={CardIcon} />
           </div>
         </div>

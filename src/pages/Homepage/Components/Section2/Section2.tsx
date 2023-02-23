@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import ProductCard from "../../../../components/ProductCard/ProductCard";
 import Products from "../../../../api/products";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 export default function Section2() {
   let slider = useRef<any>(null);

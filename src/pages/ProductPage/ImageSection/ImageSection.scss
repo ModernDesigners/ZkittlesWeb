@@ -41,3 +41,12 @@
         border: 2px solid $Lime;
     }
 }
+@media (max-width: 714px) {
+    .ImageSection {
+        width: 100%;
+    }
+    .Head_Image {
+        width: 100%;
+        margin: auto;
+    }
+}

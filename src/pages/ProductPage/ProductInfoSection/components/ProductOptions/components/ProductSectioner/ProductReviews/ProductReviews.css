@@ -1,0 +1,115 @@
+.ReviewCard {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #f4f4f4;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+.ReviewCard .ReviewCardStarter {
+  display: flex;
+  align-items: center;
+}
+.ReviewCard .ReviewCardStarter img {
+  height: 36px;
+  aspect-ratio: 1;
+}
+.ReviewCard .ReviewCardStarter p {
+  color: #060709;
+  margin: 0;
+  margin-left: 15px;
+  font-family: main_r;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.ReviewCard .ReviewCardStarter p span {
+  font-family: main_l;
+  margin-left: 25px;
+  font-size: 14px;
+  color: #9d9ea2;
+}
+.ReviewCard .ReviewCardStars {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ReviewCard .ReviewCardContent {
+  color: #060709;
+  font-family: main_r;
+  font-size: 16px;
+}
+
+.showMoreCards {
+  display: block;
+  width: 150px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: 2px solid #f4f4f4;
+  border-radius: 20px;
+  font-family: main_r;
+  color: #17af26;
+}
+
+.WriteReview {
+  margin-top: 20px;
+}
+.WriteReview .WriteReviewHead {
+  font-size: 20px;
+  font-family: main_r;
+  color: #060709;
+  margin-bottom: 15px;
+}
+.WriteReview .WriteReviewRating {
+  font-family: main_r;
+  font-size: 16px;
+  color: #46494f;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.WriteReview .WriteReviewRating span {
+  margin-left: 15px;
+  margin-right: 7px;
+}
+.WriteReview .WriteReviewRating img {
+  margin: 0px 2px;
+  cursor: pointer;
+}
+.WriteReview .WriteReviewRev {
+  font-family: main_r;
+  font-size: 16px;
+  color: #46494f;
+  margin-bottom: 15px;
+}
+.WriteReview .WriteReviewRev span {
+  color: #eb2606;
+}
+.WriteReview textarea {
+  font-family: main_r;
+  height: 120px;
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #f4f4f4;
+  border-radius: 10px;
+  resize: none;
+}
+.WriteReview textarea::placeholder {
+  font-family: main_r;
+  color: #c8c9cb;
+}
+.WriteReview textarea:focus {
+  outline: none;
+}
+.WriteReview button {
+  font-family: main_r;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background: #17af26;
+  color: white;
+  border: 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}

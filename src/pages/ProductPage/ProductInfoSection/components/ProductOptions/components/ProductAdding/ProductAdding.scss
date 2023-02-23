@@ -1,0 +1,23 @@
+@import "../../../../../../colors.scss";
+.ProductAdding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    .Getter {
+        display: flex;
+        align-items: center;
+        font-family: main_r;
+        font-size: 14px;
+        .name {
+            color: $NavGray;
+        }
+        .times {
+            color: $Black_;
+            margin-left: 10px;
+        }
+        .price {
+            color: $BlackAlt;
+        }
+    }
+}

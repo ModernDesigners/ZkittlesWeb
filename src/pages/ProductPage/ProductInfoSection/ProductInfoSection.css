@@ -1,5 +1,5 @@
 .ProductInfoSection {
-  width: 550px;
+  width: 600px;
 }
 .ProductInfoSection p {
   letter-spacing: 2px;
@@ -16,4 +16,16 @@
 }
 .ProductInfoSection .addons_row .addon_ {
   letter-spacing: 1px;
+}
+
+@media (max-width: 545px) {
+  .container {
+    padding: 0;
+    max-width: 95% !important;
+  }
+}
+@media (max-width: 714px) {
+  .ProductInfoSection {
+    width: 100%;
+  }
 }

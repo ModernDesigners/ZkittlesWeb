@@ -4,13 +4,13 @@ import searchIcon from "../../images/icons/Search.png";
 import Nav from "./Nav";
 import AlertSale from "../AlertSale/AlertSale";
 
-export default function Header() {
+export default function Header(props: { myCart: any }) {
   return (
     <>
       <div className="WebStarter">
         <AlertSale />
 
-        <Nav />
+        <Nav myCart={props.myCart} />
         <div className="header">
           <div className="responsiveSearch">
             <input type="text" placeholder="Search" />

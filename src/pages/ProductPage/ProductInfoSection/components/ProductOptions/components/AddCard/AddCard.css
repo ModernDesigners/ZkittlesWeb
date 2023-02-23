@@ -1,0 +1,117 @@
+.addCarter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.addCartBlock {
+  width: 100%;
+  padding: 20px 30px;
+  margin: 15px 0;
+  border: 2px solid #f4f4f4;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.addCartBlock .line_Split {
+  margin-top: 20px;
+}
+
+.Counter {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #f4f4f4;
+  border-radius: 10px;
+  padding: 8px 15px;
+}
+.Counter .C_Times {
+  user-select: none;
+  margin: 0 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background: #f4f4f4;
+  font-family: main_r;
+}
+.Counter .C_Calcs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 30px;
+  aspect-ratio: 1;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.Counter .C_Calcs:hover {
+  background: #f3fbf4;
+}
+.Counter .C_Plus:hover {
+  background: #f3fbf4;
+}
+.Counter .C_Minus:hover {
+  background: rgba(235, 37, 6, 0.0392156863);
+}
+.Counter .LineV {
+  height: 20px;
+  width: 1px;
+  background: #c8c9cb;
+  margin: 0 20px;
+}
+.Counter .InStock {
+  color: #17af26;
+  font-family: main_r;
+  font-size: 14px;
+}
+
+.Button_AddCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: main_r;
+  padding: 14px 20px;
+  border-radius: 30px;
+  background: #17af26;
+  color: white;
+  border: 0;
+  height: 54px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.Button_AddCard .LineV {
+  height: 15px;
+  width: 1px;
+  background: #ffffff;
+  margin: 0 10px;
+}
+
+.checked_titles_row {
+  margin-top: 20px;
+}
+
+.checked_titles {
+  display: flex;
+  align-items: center;
+  color: #060709;
+  font-family: main_r;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.checked_titles img {
+  margin-right: 10px;
+}
+.checked_titles span {
+  color: #f2bc1b;
+  margin: 0 4px;
+}
+
+@media (max-width: 600px) {
+  .addCarter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}

@@ -1,7 +1,29 @@
+@import "../../colors.scss";
 .ProductPage_content {
     display: flex;
     gap: 50px;
     justify-content: center;
     align-items: start;
     margin-top: 40px;
+}
+.line_Split_B {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 1px;
+    background: $Placeholder;
+}
+.Get_Push_Down {
+    margin-top: 50px;
+    margin-bottom: 350px;
+}
+@media (max-width: 1317px) {
+    .ProductPage_content {
+        margin-top: 200px;
+    }
+}
+@media (max-width: 1210px) {
+    .ProductPage_content {
+        align-items: center;
+        flex-direction: column;
+    }
 }

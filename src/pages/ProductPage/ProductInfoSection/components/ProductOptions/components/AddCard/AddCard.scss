@@ -1,0 +1,118 @@
+@import "../../../../../../../colors.scss";
+.addCarter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.addCartBlock {
+    width: 100%;
+    padding: 20px 30px;
+    margin: 15px 0;
+    border: 2px solid $White_;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .line_Split {
+        margin-top: 20px;
+    }
+}
+.Counter {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid $White_;
+    border-radius: 10px;
+    padding: 8px 15px;
+    .C_Times {
+        user-select: none;
+        margin: 0 10px;
+        padding: 5px 15px;
+        border-radius: 5px;
+        background: $White_;
+        font-family: main_r;
+    }
+    .C_Calcs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        height: 30px;
+        aspect-ratio: 1;
+        border-radius: 5px;
+        transition: 0.2s;
+        &:hover {
+            background: $Lime_;
+        }
+    }
+    .C_Plus {
+        &:hover {
+            background: $Lime_;
+        }
+    }
+    .C_Minus {
+        &:hover {
+            background: $Red_;
+        }
+    }
+    .LineV {
+        height: 20px;
+        width: 1px;
+        background: $Placeholder;
+        margin: 0 20px;
+    }
+    .InStock {
+        color: $Lime;
+        font-family: main_r;
+        font-size: 14px;
+    }
+}
+
+.Button_AddCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: main_r;
+    padding: 14px 20px;
+    border-radius: 30px;
+    background: $Lime;
+    color: white;
+    border: 0;
+    height: 54px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    .LineV {
+        height: 15px;
+        width: 1px;
+        background: $White;
+        margin: 0 10px;
+    }
+}
+.checked_titles_row {
+    margin-top: 20px;
+}
+.checked_titles {
+    display: flex;
+    align-items: center;
+    color: $BlackAlt;
+    font-family: main_r;
+    font-size: 14px;
+    margin: 10px 0;
+    img {
+        margin-right: 10px;
+    }
+    span {
+        color: $Yellow;
+        margin: 0 4px;
+    }
+}
+@media (max-width: 600px) {
+    .addCarter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}

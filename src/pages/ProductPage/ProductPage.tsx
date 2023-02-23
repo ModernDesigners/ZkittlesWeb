@@ -1,4 +1,5 @@
 import ImageSection from "./ImageSection/ImageSection";
+import ProductsRow from "./ProductInfoSection/components/ProductOptions/components/ProductsRow/ProductsRow";
 import ProductInfoSection from "./ProductInfoSection/ProductInfoSection";
 import "./ProductPage.css";
 export default function ProductPage() {
@@ -9,6 +10,8 @@ export default function ProductPage() {
           <ImageSection />
           <ProductInfoSection />
         </div>
+        <div className="line_Split_B "></div>
+        <ProductsRow />
       </div>
     </div>
   );
