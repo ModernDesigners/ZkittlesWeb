@@ -3,17 +3,18 @@ import "./MyCart.css";
 import cart from "../../images/cart-bag1.png";
 import { AiOutlineRight } from "react-icons/ai";
 
-export default function MyCart(props: { myCart: any }) {
+export default function MyCart(props: { myCart: any; darkScreen: any }) {
   const myCart = useRef<any>(null);
+  const darkScreen = useRef<any>(null);
+
   const closeCart = () => {
-    props.myCart.current.classList.remove("active");
-    setTimeout(() => {
-      props.myCart.current.style.display = "none";
-    }, 400);
+    props.darkScreen.current.classList.remove("darkScreenActive");
+    props.myCart.current.classList.remove("myCartActive");
   };
   return (
-    <div className="mycart" ref={props.myCart} style={{ display: "none" }}>
-      <div className="mycart-main">
+    <>
+      <div className="darkScreen" ref={props.darkScreen}></div>
+      <div className="mycart-main" ref={props.myCart}>
         <div className="mycart-header">
           <h3>Your Cart</h3>
           <p>(0)</p>
@@ -31,6 +32,6 @@ export default function MyCart(props: { myCart: any }) {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

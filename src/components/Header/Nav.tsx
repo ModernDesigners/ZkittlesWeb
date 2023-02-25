@@ -7,14 +7,13 @@ import TruckImage from "../../images/icons/Truck.png";
 import GreenImage from "../../images/icons/Green.png";
 import CoinImage from "../../images/icons/Coin.png";
 import ResponsiveGo from "./components/ResponsiveGo";
-export default function Nav(props: { myCart: any }) {
-  const openCart = () => {
-    props.myCart.current.style.display = "block";
 
-    setTimeout(() => {
-      props.myCart.current.classList.add("active");
-    }, 10);
+export default function Nav(props: { myCart: any; darkScreen: any }) {
+  const openCart = () => {
+    props.darkScreen.current.classList.add("darkScreenActive");
+    props.myCart.current.classList.add("myCartActive");
   };
+
   const [navActive, setNavActive] = useState<boolean>(false);
   return (
     <nav>

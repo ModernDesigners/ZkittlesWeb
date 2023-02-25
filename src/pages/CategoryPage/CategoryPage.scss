@@ -1,0 +1,45 @@
+@import "../../colors.scss";
+.CategoryPage {
+    padding-bottom: 350px;
+}
+.Category_Starter {
+    background: $Green_;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: main_m;
+        font-size: 20px;
+        color: $BlackAlt;
+        gap: 20px;
+        height: 95px;
+        .img_i_block_ {
+            height: 50px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: white;
+            padding: 8px;
+            margin-right: 15px;
+            margin-left: 10px;
+            img {
+                height: 100%;
+            }
+        }
+        .HeaderLine {
+            height: 30px;
+            width: 2px;
+            background: #c3d2cc;
+            display: block;
+            margin-left: auto;
+        }
+        .Category_Starter_Option {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+.CategoryPageRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

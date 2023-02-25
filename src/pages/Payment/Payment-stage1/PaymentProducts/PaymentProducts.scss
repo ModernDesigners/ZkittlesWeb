@@ -1,0 +1,99 @@
+.payment-stage1 {
+  .stage1-products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(200, 201, 203, 1);
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+
+    p {
+      margin-bottom: 0px;
+      font-size: 18px;
+    }
+  }
+  .stage1-products {
+    width: 100%;
+    padding-bottom: 40px;
+    .stage1-product {
+      display: flex;
+      gap: 20px;
+      .product-image {
+        width: 65px;
+        height: 65px;
+        border-radius: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+        img {
+          width: 90%;
+          height: 90%;
+        }
+      }
+      .products-information {
+        width: 100%;
+        border-bottom: 1px solid #ededed;
+        padding: 20px 0px;
+      }
+      .product-information {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 15px;
+        align-items: center;
+
+        p {
+          margin-bottom: 0px;
+        }
+        .product-price {
+          text-align: right;
+          p {
+            color: #9d9ea2;
+          }
+        }
+
+        .product-quantity-main {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          h4 {
+            margin-bottom: 0px;
+          }
+
+          .product-quantity {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+
+            div {
+              width: 36px;
+              height: 36px;
+              background: #f4f4f4;
+              border: 1px solid #f4f4f4;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 4px;
+            }
+            svg {
+              cursor: pointer;
+            }
+          }
+          .product-quantity-price {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .subtotal-main {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

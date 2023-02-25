@@ -1,5 +1,12 @@
 @import "../../colors.scss";
 
+.WebStarter {
+    position: fixed;
+    width: 100%;
+    background: $White;
+    z-index: 99;
+    top: 0;
+}
 .header {
     height: 60px;
     width: 100%;
@@ -14,8 +21,7 @@
     .HeaderOption {
         display: none;
     }
-    .header {
-    }
+
     .WebStarter {
         position: fixed;
         top: 0;

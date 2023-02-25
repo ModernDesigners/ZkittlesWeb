@@ -96,3 +96,21 @@ p {
   letter-spacing: 1px;
   margin-top: 20px;
 }
+.line_Split {
+  height: 2px;
+  width: 100%;
+  margin: 10px 0;
+  background: $White_;
+}
+.line_Split_ {
+  height: 2px;
+  width: 90%;
+  margin: 10px 0;
+  background: $White_;
+}
+.lineV {
+  height: 20px;
+  width: 2px;
+  background: $White_;
+  margin: 0 15px;
+}

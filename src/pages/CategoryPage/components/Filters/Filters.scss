@@ -1,0 +1,140 @@
+@import "../../../../colors.scss";
+.Filters {
+    border-right: 2px solid $White_;
+    .Filter_Container {
+        width: 90%;
+    }
+    .StartFilter {
+        font-size: 18px;
+        color: $Black;
+        font-family: main_r;
+        margin: 20px 0;
+    }
+    .productCategory {
+        margin: 25px 0;
+        .selector {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            p {
+                margin: 0;
+            }
+            .selectorCheck {
+                height: 20px;
+                aspect-ratio: 1;
+                border: 2px solid $White_;
+                margin-right: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: 0.1s;
+            }
+            .selectorChecked {
+                height: 20px;
+                border: 5px solid $Lime;
+            }
+            .selectorName {
+                font-size: 15px;
+                font-family: main_r;
+                color: $NavGray;
+            }
+            .selectorNumber {
+                font-size: 15px;
+                font-family: main_l;
+                color: $Black_;
+            }
+        }
+        .star_selectorCheck {
+            height: 20px;
+            aspect-ratio: 1;
+            border: 2px solid $White_;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+        .starsCount {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            img {
+                height: 17px;
+            }
+        }
+    }
+}
+.l_Name {
+    font-family: main_l;
+    font-size: 13px;
+    color: $Pgrey;
+    margin-bottom: 20px;
+}
+
+.priceSLider {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    .priceRow {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .priceIndicator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 20px;
+            border-radius: 30px;
+            background: $White_;
+            font-size: 15px;
+            color: $BlackAlt;
+            font-family: main_r;
+        }
+    }
+    .price_Inputs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 2px;
+        width: 100%;
+        margin-top: 30px;
+        background: $BlackAlt;
+        .priceInput {
+            position: absolute;
+            -webkit-appearance: none;
+            width: 100%;
+            background: none;
+            pointer-events: none;
+            &::-webkit-slider-thumb {
+                height: 15px;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                -webkit-appearance: none;
+                pointer-events: auto;
+                background: rgba(255, 255, 255, 1);
+                border: 3px solid $BlackAlt;
+            }
+        }
+    }
+}
+.applyFilters {
+    font-family: main_r;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: $Lime;
+    color: white;
+    border: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+.buttonAlt {
+    font-family: main_r;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: $Lime_;
+    color: $Lime;
+    border: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}

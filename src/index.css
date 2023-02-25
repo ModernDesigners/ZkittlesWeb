@@ -106,3 +106,24 @@ p {
   letter-spacing: 1px;
   margin-top: 20px;
 }
+
+.line_Split {
+  height: 2px;
+  width: 100%;
+  margin: 10px 0;
+  background: #f4f4f4;
+}
+
+.line_Split_ {
+  height: 2px;
+  width: 90%;
+  margin: 10px 0;
+  background: #f4f4f4;
+}
+
+.lineV {
+  height: 20px;
+  width: 2px;
+  background: #f4f4f4;
+  margin: 0 15px;
+}

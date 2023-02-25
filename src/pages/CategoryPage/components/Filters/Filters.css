@@ -1,0 +1,142 @@
+.Filters {
+  border-right: 2px solid #f4f4f4;
+}
+.Filters .Filter_Container {
+  width: 90%;
+}
+.Filters .StartFilter {
+  font-size: 18px;
+  color: #1a1e26;
+  font-family: main_r;
+  margin: 20px 0;
+}
+.Filters .productCategory {
+  margin: 25px 0;
+}
+.Filters .productCategory .selector {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+.Filters .productCategory .selector p {
+  margin: 0;
+}
+.Filters .productCategory .selector .selectorCheck {
+  height: 20px;
+  aspect-ratio: 1;
+  border: 2px solid #f4f4f4;
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.Filters .productCategory .selector .selectorChecked {
+  height: 20px;
+  border: 5px solid #17af26;
+}
+.Filters .productCategory .selector .selectorName {
+  font-size: 15px;
+  font-family: main_r;
+  color: #46494f;
+}
+.Filters .productCategory .selector .selectorNumber {
+  font-size: 15px;
+  font-family: main_l;
+  color: #9d9ea2;
+}
+.Filters .productCategory .star_selectorCheck {
+  height: 20px;
+  aspect-ratio: 1;
+  border: 2px solid #f4f4f4;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.Filters .productCategory .starsCount {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Filters .productCategory .starsCount img {
+  height: 17px;
+}
+
+.l_Name {
+  font-family: main_l;
+  font-size: 13px;
+  color: #717378;
+  margin-bottom: 20px;
+}
+
+.priceSLider {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.priceSLider .priceRow {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.priceSLider .priceRow .priceIndicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background: #f4f4f4;
+  font-size: 15px;
+  color: #060709;
+  font-family: main_r;
+}
+.priceSLider .price_Inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 2px;
+  width: 100%;
+  margin-top: 30px;
+  background: #060709;
+}
+.priceSLider .price_Inputs .priceInput {
+  position: absolute;
+  -webkit-appearance: none;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+}
+.priceSLider .price_Inputs .priceInput::-webkit-slider-thumb {
+  height: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  pointer-events: auto;
+  background: rgb(255, 255, 255);
+  border: 3px solid #060709;
+}
+
+.applyFilters {
+  font-family: main_r;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: #17af26;
+  color: white;
+  border: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+.buttonAlt {
+  font-family: main_r;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: #f3fbf4;
+  color: #17af26;
+  border: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}

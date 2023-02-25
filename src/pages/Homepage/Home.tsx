@@ -17,7 +17,6 @@ import {
 export default function Home(props: { myCart: any }) {
   return (
     <>
-      <HeaderNav myCart={props.myCart} />
       <Section />
       <Section1 />
       <Section2 />

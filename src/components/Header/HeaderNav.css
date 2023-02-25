@@ -1,3 +1,11 @@
+.WebStarter {
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  z-index: 99;
+  top: 0;
+}
+
 .header {
   height: 60px;
   width: 100%;
