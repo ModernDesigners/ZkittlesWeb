@@ -43,7 +43,7 @@ export default function ShopBanner() {
 
   return (
     <div className="ShopBanner">
-      <div className="InfoProd col-6">
+      <div className="InfoProd col-lg-6 col-md-12 col-sm-12">
         <p>CONCENTRATES</p>
         <h2>Mix And Match Shatter/Budder 28g (4 X 7G)</h2>
         <div className="review">
@@ -68,7 +68,7 @@ export default function ShopBanner() {
           </div>
         </div>
       </div>
-      <div className="SliderProd col-6">
+      <div className="SliderProd col-lg-6 col-md-12 col-sm-12">
         <div className="SliderShop">
           <div className="toLeftImageSlider" onClick={leftSlide}>
             <img src={arrowLeft} />

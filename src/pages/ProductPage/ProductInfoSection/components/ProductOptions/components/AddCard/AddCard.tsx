@@ -2,15 +2,37 @@ import { FiMinus, FiPlus } from "react-icons/fi";
 import ProductAdding from "../ProductAdding/ProductAdding";
 import "./AddCard.css";
 import checked_circle from "../../../../../../../images/icons/checked_circle.png";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { MyUser } from "../../../../../../../App";
 
 export default function AddCard() {
+  const Product = { id: 12 };
+
   const [productCount, setProductCount] = useState(1);
   function getDecreaseCount() {
     if (productCount > 1) {
       setProductCount(productCount - 1);
     }
   }
+
+  const User = useContext(MyUser);
+  function addUserCard(ProductId: number, ProductAmount: number) {
+    const newUser = User.data;
+    const thisProduct = {
+      productId: ProductId,
+      productAmount: ProductAmount,
+    };
+    let DelInd = newUser.cart.findIndex(
+      (item: any) => item.productId == thisProduct.productId
+    );
+    if (DelInd !== -1) {
+      newUser.cart.splice(DelInd, 1);
+    }
+    newUser.cart.push(thisProduct);
+    User.setUser(newUser);
+    console.log(User.data);
+  }
+
   return (
     <div className="addCartBlock">
       <ProductAdding name="Khalifa Kush (AAAA)" times={2} price={120.0} />
@@ -33,7 +55,10 @@ export default function AddCard() {
             <div className="InStock">In Stock</div>
           </div>
           <div className="Button_AddCard_Block">
-            <button className="Button_AddCard">
+            <button
+              className="Button_AddCard"
+              onClick={() => addUserCard(Product.id, productCount)}
+            >
               Add Card
               <div className="LineV"></div>
               $120.00

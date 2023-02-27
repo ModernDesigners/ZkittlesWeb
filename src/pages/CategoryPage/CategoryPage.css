@@ -51,3 +51,16 @@
   font-family: main_r;
   margin: 20px 0;
 }
+
+@media (max-width: 1199px) {
+  .CategoryPageRow {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 910px) {
+  .Category_Starter {
+    display: none;
+  }
+}

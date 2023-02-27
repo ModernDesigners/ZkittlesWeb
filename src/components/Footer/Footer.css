@@ -18,6 +18,9 @@ footer .footer-topside-main h1 {
   width: 789px;
   margin-bottom: 24px;
 }
+footer .footer-topside-main p {
+  color: #c3d2cc;
+}
 footer .footer-topside-main .footer-topside-line {
   margin: 40px 0px;
   width: 100%;
@@ -39,6 +42,10 @@ footer .footer-topside-main .footer-inputs input[type=text] {
   color: #fff;
   outline: none;
   font-size: 17px;
+  font-family: main_R;
+}
+footer .footer-topside-main .footer-inputs input[type=text]::placeholder {
+  color: #648a7c;
 }
 footer .footer-topside-main .footer-inputs input[type=submit] {
   padding: 24px 44px;

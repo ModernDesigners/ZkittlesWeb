@@ -6,3 +6,42 @@
     gap: 30px;
   }
 }
+@media screen and (max-width: 990px) {
+  .payment-stage2-main {
+    flex-direction: column;
+    align-items: center;
+    .payment-stage1-rightside {
+      width: 90%;
+      margin: auto;
+      min-width: unset;
+    }
+  }
+}
+@media screen and (max-width: 590px) {
+  .payment-stage2-main {
+    .stage2-inputs-main {
+      .more-information {
+        .more-information-topside {
+          flex-direction: column;
+          div {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .payment-stage1-rightside {
+      width: 100%;
+      margin: auto;
+      min-width: unset;
+      .coupon-code {
+        gap: 5px !important;
+
+        input[type="submit"] {
+          width: 70px !important;
+          font-size: 9px;
+          border-radius: 9px !important;
+        }
+      }
+    }
+  }
+}

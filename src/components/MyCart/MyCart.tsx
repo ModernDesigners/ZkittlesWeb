@@ -1,12 +1,13 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import "./MyCart.css";
 import cart from "../../images/cart-bag1.png";
 import { AiOutlineRight } from "react-icons/ai";
+import { MyUser } from "../../App";
 
 export default function MyCart(props: { myCart: any; darkScreen: any }) {
   const myCart = useRef<any>(null);
   const darkScreen = useRef<any>(null);
-
+  const User = useContext<any>(MyUser);
   const closeCart = () => {
     props.darkScreen.current.classList.remove("darkScreenActive");
     props.myCart.current.classList.remove("myCartActive");

@@ -1,6 +1,8 @@
 .ShopBanner {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 50px 0px;
   background: conic-gradient(from 180deg at 50% 50%, rgba(5, 66, 44, 0.7) -4.67deg, #05422c 299.08deg, rgba(5, 66, 44, 0.7) 355.33deg, #05422c 659.08deg);
   border-radius: 30px;
   padding: 60px 45px;
@@ -187,4 +189,35 @@
   aspect-ratio: 1;
   border-radius: 50%;
   background: #ffffff;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100% !important;
+    padding: 0;
+  }
+  .ShopBanner {
+    padding: 30px 10px;
+  }
+  .SliderProd .SliderShop .toRightImageSlider {
+    right: 0px;
+  }
+  .SliderProd .SliderShop .toLeftImageSlider {
+    left: 0px;
+  }
+  .SliderProd {
+    width: 100%;
+  }
+  .InfoProd {
+    text-align: center;
+  }
+  .InfoProd h2 {
+    width: 100%;
+  }
+  .InfoProd .options {
+    justify-content: center;
+  }
+  .InfoProd .addCart_Price {
+    justify-content: center;
+  }
 }

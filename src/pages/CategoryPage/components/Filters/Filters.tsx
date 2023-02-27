@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 import StarsCalc from "../../../Homepage/Components/Section3/components/StarsCalc";
 import "./Filters.css";
 import { SelectorsAPI, OrdersAPI, StarsAPI } from "./FiltersAPI";
 
-export default function Filters() {
+export default function Filters(props: any) {
   const [minInput, setMinInput] = useState(0);
   const [maxInput, setMaxInput] = useState(50000);
   const [activeSelector, setActiveSelector] = useState<null | number>(null);
@@ -18,10 +19,18 @@ export default function Filters() {
     setStars(null);
   }
   return (
-    <div className="Filters col-3">
+    <div
+      className={`Filters col-lg-3 col-md-12 ${
+        props.filters ? "FiltersCome" : ""
+      }`}
+    >
       <div className="Filter_Content">
         <div className="Filter_Container">
+          <div className="shutButton"></div>
           <p className="StartFilter">Fllters</p>
+          <div className="shutFilters" onClick={() => props.setFilters(false)}>
+            <AiOutlineClose size={25} />
+          </div>
           <div className="line_Split"></div>
           <div className="productCategory">
             <p className="l_Name">PRODUCT CATEGORY</p>

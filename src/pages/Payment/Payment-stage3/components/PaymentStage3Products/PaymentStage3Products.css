@@ -1,27 +1,16 @@
-.payment-stage1 .stage1-products-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgb(200, 201, 203);
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-}
-.payment-stage1 .stage1-products-header p {
-  margin-bottom: 0px;
-  font-size: 18px;
-}
-.payment-stage1 .stage1-products {
-  width: 100%;
-  padding-bottom: 40px;
-}
-.payment-stage1 .stage1-products .subtotal-main {
-  display: flex;
-  justify-content: space-between;
-}
-
 .stage1-product {
   display: flex;
   gap: 20px;
+}
+.stage1-product .stage3-product-middle {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+.stage1-product .stage3-product-middle p {
+  transform: translateY(-2px);
+  color: #9d9ea2;
 }
 .stage1-product .product-image {
   width: 65px;
@@ -32,7 +21,6 @@
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  margin-top: 30px;
 }
 .stage1-product .product-image img {
   width: 90%;
@@ -90,4 +78,4 @@
 }
 .stage1-product .product-information .product-quantity-main .product-quantity-price {
   text-align: center;
-}/*# sourceMappingURL=PaymentProducts.css.map */
+}/*# sourceMappingURL=PaymentStage3Products.css.map */

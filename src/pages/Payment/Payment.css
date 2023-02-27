@@ -1,0 +1,18 @@
+@media screen and (max-width: 991px) {
+  .payment-header {
+    padding: 28px 30px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .payment-header .stage p {
+    font-size: 13px;
+  }
+  .payment-header .payment-header-line {
+    display: none;
+  }
+}
+@media screen and (max-width: 590px) {
+  .payment-header .stage {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Payment.css.map */

@@ -6,11 +6,17 @@ import arrowLeft from "../../../../images/icons/arrow-left.png";
 import arrowRight from "../../../../images/icons/arrow-right.png";
 import ShopBanner from "./components/ShopBanner/ShopBanner";
 
-export default function Shop() {
+export default function Shop(props: any) {
   return (
-    <div className="Shop col-8">
+    <div className="Shop col-lg-8 col-md-12 col-sm-12">
       <div className="ShopStarter">
         <p className="StartFilter">Shop</p>
+        <div
+          className="Shorts"
+          onClick={() => props.setFilters(!props.filters)}
+        >
+          Filter <img src={DropDownIcon} />
+        </div>
         <div className="Shorts">
           Short By Lates <img src={DropDownIcon} />
         </div>

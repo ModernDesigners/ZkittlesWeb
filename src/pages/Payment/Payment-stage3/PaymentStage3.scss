@@ -1,0 +1,81 @@
+.payment-stage3 {
+  .stage3-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    div {
+      display: flex;
+      gap: 10px;
+      div:nth-child(1) {
+        justify-content: center;
+        align-items: center;
+        background-color: #17af26;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        svg {
+          font-size: 16px;
+          color: #fff;
+        }
+      }
+      p {
+        margin-bottom: 0px;
+        font-size: 16px;
+        line-height: 150%;
+        /* identical to box height, or 24px */
+
+        /* Primary/500 */
+
+        color: #17af26;
+      }
+    }
+  }
+}
+.stage1-product {
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 991px) {
+  .payment-stage3 {
+    .total-main {
+      .total-information {
+        .total-leftside,
+        .total-middle,
+        .total-rightside {
+          flex-direction: unset;
+          justify-content: space-between;
+          padding-bottom: 30px;
+          p,
+          h4 {
+            width: 33%;
+          }
+        }
+        .total-middle {
+          border-bottom: 1px solid #f4f4f4;
+        }
+        .total-rightside {
+          padding-top: 30px;
+          display: block;
+          .total-count {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .payment-stage3 {
+    .total-main {
+      .total-information {
+        .total-leftside,
+        .total-middle {
+          p,
+          h4 {
+            font-size: 12px;
+          }
+          text-align: center;
+        }
+      }
+    }
+  }
+}

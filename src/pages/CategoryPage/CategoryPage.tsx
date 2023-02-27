@@ -5,8 +5,10 @@ import Green from "../../images/icons/Green.png";
 import Coin from "../../images/icons/Coin.png";
 import Filters from "./components/Filters/Filters";
 import Shop from "./components/Shop/Shop";
+import { useState } from "react";
 
 export default function CategoryPage() {
+  const [filters, setFilters] = useState<boolean>(false);
   return (
     <div className="CategoryPage">
       <div className="Category_Starter">
@@ -35,8 +37,8 @@ export default function CategoryPage() {
       </div>
       <div className="container">
         <div className="CategoryPageRow">
-          <Filters />
-          <Shop />
+          <Filters filters={filters} setFilters={setFilters} />
+          <Shop filters={filters} setFilters={setFilters} />
         </div>
       </div>
     </div>

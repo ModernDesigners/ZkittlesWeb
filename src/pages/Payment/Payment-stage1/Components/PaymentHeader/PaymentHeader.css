@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 28px 420px;
+  padding: 28px 0px;
   gap: 26px;
   width: 100%;
   height: 86px;
@@ -38,4 +38,4 @@
 .payment-header .stage p {
   font-size: 14.5px;
   margin-bottom: 0px;
-}
+}/*# sourceMappingURL=PaymentHeader.css.map */

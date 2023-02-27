@@ -103,3 +103,24 @@
         }
     }
 }
+@media (max-width: 1199px) {
+    .ProductsRow {
+        gap: 10px;
+    }
+    .Shop {
+        padding: 0;
+    }
+}
+@media (max-width: 575px) {
+    .last_Row {
+        flex-direction: column;
+    }
+    .Shop {
+        width: 100%;
+    }
+    .Shop .ShopStarter {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+}

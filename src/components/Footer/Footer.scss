@@ -1,3 +1,4 @@
+@import "../../colors.scss";
 footer {
   padding: 350px 0px 50px 0px;
   position: relative;
@@ -15,6 +16,9 @@ footer {
     h1 {
       width: 789px;
       margin-bottom: 24px;
+    }
+    p {
+      color: $FooterW;
     }
     .footer-topside-line {
       margin: 40px 0px;
@@ -36,6 +40,10 @@ footer {
         color: #fff;
         outline: none;
         font-size: 17px;
+        font-family: main_R;
+        &::placeholder {
+          color: $FooterPlaceHolder;
+        }
       }
       input[type="submit"] {
         padding: 24px 44px;

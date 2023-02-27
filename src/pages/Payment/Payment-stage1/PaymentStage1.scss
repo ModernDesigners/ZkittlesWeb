@@ -2,7 +2,79 @@
   display: flex;
   padding: 50px 0px;
   gap: 65px;
+
   .payment-stage1-leftside {
     width: 100%;
+  }
+  .stage1-product {
+    padding: 20px 0px;
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .payment-stage1-main {
+    flex-direction: column;
+    align-items: center;
+    .payment-stage1-rightside {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .payment-delivery-card {
+    margin-bottom: 30px;
+  }
+
+  .payment-stage1-main {
+    flex-direction: column;
+    align-items: center;
+    .payment-stage1-rightside {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .payment-header {
+    .stage {
+      p {
+        font-size: 13px;
+      }
+    }
+    .payment-header-line {
+      display: none;
+    }
+  }
+
+  .product-information {
+    flex-direction: column;
+    gap: 50px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .stage1-product {
+    flex-direction: column;
+    align-items: center;
+  }
+  .payment-stage1-main {
+    flex-direction: column;
+    align-items: center;
+    .payment-stage1-rightside {
+      width: 100%;
+      min-width: 100%;
+      .coupon-code {
+        gap: 5px !important;
+
+        input[type="submit"] {
+          width: 70px !important;
+          font-size: 9px;
+          border-radius: 9px !important;
+        }
+      }
+    }
   }
 }

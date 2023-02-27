@@ -12,9 +12,9 @@ export default function PaymentProducts() {
           <p>(0)</p>
         </div>
 
-        <Product show={true} />
-        <Product show={false} />
-        <Product show={false} />
+        <Product stage3={false} show={true} />
+        <Product stage3={false} show={false} />
+        <Product stage3={false} show={false} />
       </div>
     </>
   );

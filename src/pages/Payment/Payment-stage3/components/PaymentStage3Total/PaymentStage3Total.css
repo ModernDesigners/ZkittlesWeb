@@ -1,0 +1,60 @@
+.total-main p,
+.total-main h4,
+.total-main h3 {
+  margin-bottom: 0px;
+}
+.total-main .total-header {
+  display: flex;
+  padding: 50px 0px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f4f4f4;
+}
+.total-main .total-header h3 {
+  font-size: 20px;
+  line-height: 150%;
+  color: #eb2606;
+}
+.total-main .total-information {
+  padding: 24px 0px;
+}
+.total-main .total-information .total-leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.total-main .total-information .total-middle {
+  display: flex;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.total-main .total-information .total-rightside {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.total-main .total-information .total-rightside .total-rightside-count {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.total-main .total-information .total-rightside .total-rightside-count div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.total-main .total-information .total-rightside div {
+  padding-bottom: 30px;
+}
+.total-main .total-information .total-rightside .total-count {
+  border-top: 1px solid #f4f4f4;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+.total-main .total-information .total-rightside .total-count h3 {
+  color: #eb2606;
+}/*# sourceMappingURL=PaymentStage3Total.css.map */

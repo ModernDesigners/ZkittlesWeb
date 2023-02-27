@@ -207,6 +207,9 @@ nav .navContainer .navOptions .CartNav {
     left: 20px;
     display: flex;
   }
+  nav .navContainer .navLogo {
+    margin-left: 20px;
+  }
   nav .navContainer .navLogo img {
     width: 120px;
     margin-left: 30px;

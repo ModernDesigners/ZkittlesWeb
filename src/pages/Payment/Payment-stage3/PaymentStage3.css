@@ -1,0 +1,73 @@
+.payment-stage3 .stage3-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+.payment-stage3 .stage3-header div {
+  display: flex;
+  gap: 10px;
+}
+.payment-stage3 .stage3-header div div:nth-child(1) {
+  justify-content: center;
+  align-items: center;
+  background-color: #17af26;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+.payment-stage3 .stage3-header div div:nth-child(1) svg {
+  font-size: 16px;
+  color: #fff;
+}
+.payment-stage3 .stage3-header div p {
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  /* Primary/500 */
+  color: #17af26;
+}
+
+.stage1-product {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .payment-stage3 .total-main .total-information .total-leftside,
+  .payment-stage3 .total-main .total-information .total-middle,
+  .payment-stage3 .total-main .total-information .total-rightside {
+    flex-direction: unset;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  .payment-stage3 .total-main .total-information .total-leftside p,
+  .payment-stage3 .total-main .total-information .total-leftside h4,
+  .payment-stage3 .total-main .total-information .total-middle p,
+  .payment-stage3 .total-main .total-information .total-middle h4,
+  .payment-stage3 .total-main .total-information .total-rightside p,
+  .payment-stage3 .total-main .total-information .total-rightside h4 {
+    width: 33%;
+  }
+  .payment-stage3 .total-main .total-information .total-middle {
+    border-bottom: 1px solid #f4f4f4;
+  }
+  .payment-stage3 .total-main .total-information .total-rightside {
+    padding-top: 30px;
+    display: block;
+  }
+  .payment-stage3 .total-main .total-information .total-rightside .total-count {
+    display: flex;
+  }
+}
+@media screen and (max-width: 700px) {
+  .payment-stage3 .total-main .total-information .total-leftside,
+  .payment-stage3 .total-main .total-information .total-middle {
+    text-align: center;
+  }
+  .payment-stage3 .total-main .total-information .total-leftside p,
+  .payment-stage3 .total-main .total-information .total-leftside h4,
+  .payment-stage3 .total-main .total-information .total-middle p,
+  .payment-stage3 .total-main .total-information .total-middle h4 {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=PaymentStage3.css.map */
