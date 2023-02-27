@@ -1,0 +1,31 @@
+.fullname {
+  display: flex;
+  gap: 20px;
+  div {
+    width: 50%;
+  }
+}
+.country-location {
+  div {
+    margin-bottom: 20px;
+  }
+}
+.more-information {
+  border-bottom: 1px solid #c8c9cb;
+  padding-bottom: 30px;
+  .more-information-topside {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    div {
+      width: 33%;
+    }
+  }
+  .more-information-bottomside {
+    display: flex;
+    gap: 30px;
+    div {
+      width: 50%;
+    }
+  }
+}

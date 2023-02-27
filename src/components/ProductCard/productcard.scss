@@ -1,7 +1,7 @@
 .product-card {
   padding: 0px;
   width: 291px;
-  background: #fff;
+  background: transparent;
   .product-card-image {
     display: flex;
     justify-content: center;
@@ -109,6 +109,9 @@
           color: #c8c9cb;
           font-size: 14px;
           text-decoration: line-through;
+        }
+        .gramSpan {
+          text-decoration: none;
         }
       }
       .product-weights {

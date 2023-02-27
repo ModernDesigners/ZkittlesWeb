@@ -1,0 +1,107 @@
+.Shop {
+  padding-left: 30px;
+}
+.Shop .ShopStarter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+}
+.Shop .ShopStarter .StartFilter {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.Shop .ShopStarter .Shorts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  border: 2px solid #f4f4f4;
+  font-size: 14px;
+  color: #1a1e26;
+  font-family: main_r;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.Shop .ShopStarter .Shorts img {
+  margin-left: 10px;
+}
+.Shop .descriptionStart {
+  margin-top: 20px;
+}
+.Shop .descriptionStart P {
+  margin: 0;
+}
+.Shop .descriptionStart .limeStart {
+  color: #17af26;
+  font-size: 20px;
+  font-family: main_m;
+  margin-bottom: 10px;
+}
+.Shop .descriptionStart .desc {
+  color: #717378;
+  font-family: main_r;
+  font-size: 16px;
+  width: 90%;
+  line-height: 28px;
+}
+
+.ProductsRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: center;
+  gap: 50px 80px;
+  margin-bottom: 20px;
+}
+
+.last_Row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.last_Row .results {
+  font-size: 14px;
+  font-family: main_l;
+  color: #717378;
+}
+
+.GetPages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.GetPages .Arrows-C {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid #f4f4f4;
+}
+.GetPages .Circl {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-family: main_r;
+  color: #1a1e26;
+  height: 36px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.GetPages .Circl:hover {
+  color: #05422c;
+  background: #f2f6f4;
+}
+.GetPages .Circl.CirclActive {
+  color: #05422c;
+  background: #f2f6f4;
+}

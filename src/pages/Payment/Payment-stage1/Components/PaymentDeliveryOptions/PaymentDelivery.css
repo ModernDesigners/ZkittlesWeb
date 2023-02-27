@@ -1,0 +1,36 @@
+.payment-delivery .payment-delivery-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.payment-delivery .payment-delivery-header h4 {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #17af26;
+}
+.payment-delivery .payment-delivery-cards {
+  padding: 30px 0px;
+}
+.payment-delivery .payment-delivery-cards .payment-delivery-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 16px;
+  width: 100%;
+  background: #ffffff;
+  height: 300px;
+  border: 1px solid #f4f4f4;
+  border-radius: 12px;
+}
+.payment-delivery .payment-delivery-cards .payment-delivery-card .delivery-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: #f2f6f4;
+  border-radius: 100px;
+}

@@ -44,3 +44,10 @@
   justify-content: center;
   margin-top: 50px;
 }
+
+.StartFilter {
+  font-size: 18px;
+  color: #1a1e26;
+  font-family: main_r;
+  margin: 20px 0;
+}

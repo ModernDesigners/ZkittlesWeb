@@ -1,6 +1,8 @@
 @import "../../../../colors.scss";
 .Filters {
-    border-right: 2px solid $White_;
+    .Filter_Content {
+        border-right: 2px solid $White_;
+    }
     .Filter_Container {
         width: 90%;
     }
@@ -8,7 +10,9 @@
         font-size: 18px;
         color: $Black;
         font-family: main_r;
-        margin: 20px 0;
+        height: 40px;
+        margin-bottom: 0;
+        margin-top: 25px;
     }
     .productCategory {
         margin: 25px 0;
@@ -37,7 +41,7 @@
                 font-family: main_r;
                 color: $NavGray;
             }
-            .selectorNumber {
+            .selectorNumbers {
                 font-size: 15px;
                 font-family: main_l;
                 color: $Black_;
@@ -137,4 +141,5 @@
     font-size: 14px;
     letter-spacing: 1px;
     margin-top: 15px;
+    margin-bottom: 30px;
 }

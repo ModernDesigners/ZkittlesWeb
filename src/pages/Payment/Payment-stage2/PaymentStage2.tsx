@@ -1,8 +1,8 @@
 import React from "react";
 import "./PaymentStage2.css";
 import { Container } from "react-bootstrap";
-import PaymentStage2Checkout from "./PaymentStage2Checkout/PaymentStage2Checkout";
-import PaymentStage2Shipping from "./PaymentStage2Shipping/PaymentStage2Shipping";
+import PaymentStage2Shipping from "./components/PaymentStage2Shipping/PaymentStage2Shipping";
+import PaymentStage2Checkout from "./components/PaymentStage2Checkout/PaymentStage2Checkout";
 export default function PaymentStage2() {
   return (
     <div className="payment-stage2">

@@ -1,0 +1,22 @@
+.bottomside-checkox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  label {
+    user-select: none;
+    cursor: pointer;
+  }
+  input {
+    padding: 0px;
+    gap: 8px;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 1px solid #f4f4f4;
+    border-radius: 6px;
+  }
+  h4 {
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+}

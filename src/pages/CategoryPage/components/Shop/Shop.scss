@@ -1,0 +1,105 @@
+@import "../../../../colors.scss";
+.Shop {
+    padding-left: 30px;
+    .ShopStarter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 65px;
+        .StartFilter {
+            font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .Shorts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 20px;
+            border: 2px solid $White_;
+            font-size: 14px;
+            color: $Black;
+            font-family: main_r;
+            border-radius: 30px;
+            cursor: pointer;
+            img {
+                margin-left: 10px;
+            }
+        }
+    }
+    .descriptionStart {
+        margin-top: 20px;
+        P {
+            margin: 0;
+        }
+        .limeStart {
+            color: $Lime;
+            font-size: 20px;
+            font-family: main_m;
+            margin-bottom: 10px;
+        }
+        .desc {
+            color: $Pgrey;
+            font-family: main_r;
+            font-size: 16px;
+            width: 90%;
+            line-height: 28px;
+        }
+    }
+}
+.ProductsRow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 50px 80px;
+    margin-bottom: 20px;
+}
+.last_Row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    .results {
+        font-size: 14px;
+        font-family: main_l;
+        color: $Pgrey;
+    }
+}
+.GetPages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    .Arrows-C {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 34px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 2px solid $White_;
+    }
+    .Circl {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-family: main_r;
+        color: $Black;
+        height: 36px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        transition: 0.3s;
+        &:hover {
+            color: $PGreen;
+            background: $Green_;
+        }
+        &.CirclActive {
+            color: $PGreen;
+            background: $Green_;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.payment-stage1 .stage1-products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(200, 201, 203);
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+.payment-stage1 .stage1-products-header p {
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+.payment-stage1 .stage1-products {
+  width: 100%;
+  padding-bottom: 40px;
+}
+.payment-stage1 .stage1-products .stage1-product {
+  display: flex;
+  gap: 20px;
+}
+.payment-stage1 .stage1-products .stage1-product .product-image {
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+.payment-stage1 .stage1-products .stage1-product .product-image img {
+  width: 90%;
+  height: 90%;
+}
+.payment-stage1 .stage1-products .stage1-product .products-information {
+  width: 100%;
+  border-bottom: 1px solid #ededed;
+  padding: 20px 0px;
+}
+.payment-stage1 .stage1-products .stage1-product .product-information {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.payment-stage1 .stage1-products .stage1-product .product-information p {
+  margin-bottom: 0px;
+}
+.payment-stage1 .stage1-products .stage1-product .product-information .product-price {
+  text-align: right;
+}
+.payment-stage1 .stage1-products .stage1-product .product-information .product-price p {
+  color: #9d9ea2;
+}
+.payment-stage1 .stage1-products .stage1-product .product-information .product-quantity-main {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.payment-stage1 .stage1-products .stage1-product .product-information .product-quantity-main h4 {
+  margin-bottom: 0px;
+}
+.payment-stage1 .stage1-products .stage1-product .product-information .product-quantity-main .product-quantity {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.payment-stage1 .stage1-products .stage1-product .product-information .product-quantity-main .product-quantity div {
+  width: 36px;
+  height: 36px;
+  background: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.payment-stage1 .stage1-products .stage1-product .product-information .product-quantity-main .product-quantity svg {
+  cursor: pointer;
+}
+.payment-stage1 .stage1-products .stage1-product .product-information .product-quantity-main .product-quantity-price {
+  text-align: center;
+}
+.payment-stage1 .stage1-products .subtotal-main {
+  display: flex;
+  justify-content: space-between;
+}

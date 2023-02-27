@@ -76,7 +76,7 @@ export default function ProductCard({
               </>
             ) : (
               <>
-                ${price} <span>/ gram</span>
+                ${price} <span className="gramSpan">/ gram</span>
               </>
             )}
           </h3>

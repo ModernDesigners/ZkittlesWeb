@@ -1,8 +1,7 @@
 import React from "react";
-import PaymentCheckout from "./PaymentCheckout/PaymentCheckout";
-import PaymentDelivery from "./PaymentDeliveryOptions/PaymentDelivery";
-import PaymentHeader from "./PaymentHeader/PaymentHeader";
-import PaymentProducts from "./PaymentProducts/PaymentProducts";
+import PaymentCheckout from "./Components/PaymentCheckout/PaymentCheckout";
+import PaymentDelivery from "./Components/PaymentDeliveryOptions/PaymentDelivery";
+import PaymentProducts from "./Components/PaymentProducts/PaymentProducts";
 import "./PaymentStage1.css";
 export default function PaymentStage1() {
   return (
