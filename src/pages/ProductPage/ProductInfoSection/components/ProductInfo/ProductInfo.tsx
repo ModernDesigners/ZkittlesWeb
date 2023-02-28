@@ -3,20 +3,23 @@ import star_ from "../../../../../images/icons/star.png";
 import Addon1 from "../../../../../images/productPage/Addon1.png";
 import Addon2 from "../../../../../images/productPage/Addon2.png";
 import Addon3 from "../../../../../images/productPage/Addon3.png";
+import Products from "../../../../../api/products";
+import { useParams } from "react-router-dom";
+export default function ProductInfo(ProductData: any) {
+  ProductData = ProductData.ProductData;
 
-export default function ProductInfo() {
   return (
     <>
       <p>CONCENTRATES</p>
-      <h2>Mix And Match Shatter/Budder 28g (4 X 7G)</h2>
+      <h2>{ProductData.name}</h2>
       <div className="addons_row">
         <p className="addon_">Indica</p>
-        <p className="addon_">Sativa 100%</p>
+        <p className="addon_">{ProductData.optional_addon}</p>
       </div>
       <div className="price_review_splitter">
         <div className="price">
           <h3>
-            <span>$200</span> $59
+            <span>{ProductData.oldPrice}</span> ${ProductData.price}
           </h3>
         </div>
         <div className="review">
@@ -66,11 +69,7 @@ export default function ProductInfo() {
         </div>
       </div>
       <p className="p_desc_title">DESCRIPTION</p>
-      <p className="p_desc">
-        Jungle Diamonds is a slightly indica dominant hybrid strain (60%
-        indica/40% sativa) created through crossing the infamous Slurricane X
-        Gorilla Glue #4 strains.
-      </p>
+      <p className="p_desc">{ProductData.description}</p>
       <div className="line_Split"></div>
     </>
   );

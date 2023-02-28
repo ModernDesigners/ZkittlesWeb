@@ -5,8 +5,9 @@ import checked_circle from "../../../../../../../images/icons/checked_circle.png
 import { useState, useContext } from "react";
 import { MyUser } from "../../../../../../../App";
 
-export default function AddCard() {
+export default function AddCard(ProductData: any) {
   const Product = { id: 12 };
+  ProductData = ProductData.ProductData.ProductData;
 
   const [productCount, setProductCount] = useState(1);
   function getDecreaseCount() {
@@ -19,7 +20,7 @@ export default function AddCard() {
   function addUserCard(ProductId: number, ProductAmount: number) {
     const newUser = User.data;
     const thisProduct = {
-      productId: ProductId,
+      productId: ProductData.id,
       productAmount: ProductAmount,
     };
     let DelInd = newUser.cart.findIndex(

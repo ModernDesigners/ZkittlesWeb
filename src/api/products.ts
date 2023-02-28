@@ -10,6 +10,8 @@ const Products = [
     price: 80.0,
     sizes: ["28g", "1/2lb", "1/4lb"],
     in_stock: false,
+    description:
+      "Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the infamous Slurricane X Gorilla Glue #4 strains.",
   },
   {
     id: 2,
@@ -23,6 +25,8 @@ const Products = [
     old_price: "$200.00",
     sizes: ["Small", "Large"],
     in_stock: true,
+    description:
+      "Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the infamous Slurricane X Gorilla Glue #4 strains.",
   },
   {
     id: 3,
@@ -36,6 +40,8 @@ const Products = [
     old_price: "$200.00",
     sizes: ["Medium"],
     in_stock: true,
+    description:
+      "Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the infamous Slurricane X Gorilla Glue #4 strains.",
   },
   {
     id: 4,
@@ -49,6 +55,8 @@ const Products = [
     old_price: "$200.00",
     sizes: ["Small", "Medium"],
     in_stock: false,
+    description:
+      "Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the infamous Slurricane X Gorilla Glue #4 strains.",
   },
   {
     id: 5,
@@ -62,6 +70,8 @@ const Products = [
     old_price: "$200.00",
     sizes: ["Large"],
     in_stock: true,
+    description:
+      "Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the infamous Slurricane X Gorilla Glue #4 strains.",
   },
   {
     id: 6,
@@ -75,6 +85,8 @@ const Products = [
     old_price: "$200.00",
     sizes: ["Small", "Medium"],
     in_stock: true,
+    description:
+      "Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the infamous Slurricane X Gorilla Glue #4 strains.",
   },
   {
     id: 7,
@@ -88,6 +100,8 @@ const Products = [
     old_price: "$200.00",
     sizes: ["Small"],
     in_stock: false,
+    description:
+      "Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the infamous Slurricane X Gorilla Glue #4 strains.",
   },
   {
     id: 8,
@@ -101,6 +115,8 @@ const Products = [
     old_price: "$200.00",
     sizes: ["Small", "Large"],
     in_stock: false,
+    description:
+      "Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the infamous Slurricane X Gorilla Glue #4 strains.",
   },
 ];
 

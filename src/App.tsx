@@ -11,6 +11,7 @@ import Home from "./pages/Homepage/Home";
 import Payment from "./pages/Payment/Payment";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import { Route, Routes } from "react-router-dom";
 
 export const MyUser = createContext<any>({});
 
@@ -34,7 +35,13 @@ function App() {
           <MarginNav />
           <MyCart myCart={myCart} darkScreen={darkScreen} />
           <HeaderNav myCart={myCart} darkScreen={darkScreen} />
-          <ProductPage />
+          <Routes>
+            <Route path="/">
+              <Route index path="Home" element={<Home myCart={myCart} />} />
+              <Route path="Payment" element={<Payment />} />
+              <Route path="Product/:id" element={<ProductPage />} />
+            </Route>
+          </Routes>
           <Footer />
         </MyUser.Provider>
       </>

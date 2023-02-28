@@ -4,9 +4,7 @@
   align-items: center;
 }
 .bottomside-checkox label {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 .bottomside-checkox input {
@@ -21,4 +19,4 @@
 .bottomside-checkox h4 {
   margin-bottom: 0px;
   font-size: 16px;
-}/*# sourceMappingURL=Bottomside.css.map */
+}

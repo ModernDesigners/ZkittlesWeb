@@ -121,9 +121,9 @@
   .Shop {
     width: 100%;
   }
-}
-.Shop .ShopStarter {
-  flex-direction: column;
-  height: auto;
-  gap: 20px;
+  .Shop .ShopStarter {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
 }

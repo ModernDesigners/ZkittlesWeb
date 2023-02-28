@@ -7,6 +7,7 @@ import TruckImage from "../../images/icons/Truck.png";
 import GreenImage from "../../images/icons/Green.png";
 import CoinImage from "../../images/icons/Coin.png";
 import ResponsiveGo from "./components/ResponsiveGo";
+import { Link } from "react-router-dom";
 
 export default function Nav(props: { myCart: any; darkScreen: any }) {
   const openCart = () => {
@@ -27,7 +28,9 @@ export default function Nav(props: { myCart: any; darkScreen: any }) {
           <span></span>
         </div>
         <div className="navLogo">
-          <img src={logo} alt="Logo" />
+          <Link to="Home">
+            <img src={logo} alt="Logo" />
+          </Link>
         </div>
         <div className="navSearch">
           <input type="text" placeholder="Search" />

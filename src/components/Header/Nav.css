@@ -208,6 +208,7 @@ nav .navContainer .navOptions .CartNav {
     display: flex;
   }
   nav .navContainer .navLogo {
+    cursor: pointer;
     margin-left: 20px;
   }
   nav .navContainer .navLogo img {

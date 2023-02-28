@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import HeaderNav from "../../components/Header/HeaderNav";
 import {
@@ -15,6 +16,10 @@ import {
 } from "./Components";
 
 export default function Home(props: { myCart: any }) {
+  const routePath = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [routePath]);
   return (
     <>
       <Section />

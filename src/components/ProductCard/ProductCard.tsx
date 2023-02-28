@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import girchi from "../../images/girchi.png";
 import star_ from "../../images/icons/star.png";
 
@@ -87,7 +88,9 @@ export default function ProductCard({
               </div>
             ))}
           </div>
-          <button className="add-cart">Add to Cart</button>
+          <Link to={"/Product/" + id}>
+            <button className="add-cart">Add to Cart</button>
+          </Link>
         </div>
       </div>
     </div>

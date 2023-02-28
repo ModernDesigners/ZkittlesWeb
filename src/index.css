@@ -127,3 +127,7 @@ p {
   background: #f4f4f4;
   margin: 0 15px;
 }
+
+a {
+  text-decoration: none;
+}

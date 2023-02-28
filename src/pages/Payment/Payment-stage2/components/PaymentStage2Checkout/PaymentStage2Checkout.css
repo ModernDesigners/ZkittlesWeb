@@ -31,9 +31,6 @@
   border-radius: 8px;
   outline: none;
 }
-.payment-stage1-rightside .payment-rightside-stage1-header .coupon-code input[type=text]::-moz-placeholder {
-  color: #c8c9cb;
-}
 .payment-stage1-rightside .payment-rightside-stage1-header .coupon-code input[type=text]::placeholder {
   color: #c8c9cb;
 }
@@ -112,4 +109,4 @@
   background: #ffffff;
   border: 1px solid #f4f4f4;
   border-radius: 6px;
-}/*# sourceMappingURL=PaymentStage2Checkout.css.map */
+}
