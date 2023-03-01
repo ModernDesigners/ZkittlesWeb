@@ -4,7 +4,7 @@ import AddCard from "./components/AddCard/AddCard";
 import ProductSectioner from "./components/ProductSectioner/ProductSectioner";
 import "./ProductOptions.css";
 
-export default function ProductOptions(ProductData: any) {
+export default function ProductOptions(props: { ProductData: any }) {
   const [activeOption, setActiveOption] = useState(0);
   const [weightActive, setWeightActive] = useState(0);
   const OptionsAPI = [{ name: "28g" }, { name: "1/2lb" }, { name: "1/4lb" }];
@@ -59,7 +59,7 @@ export default function ProductOptions(ProductData: any) {
       <div className="addon_alert">
         Purchase this product now and earn <span>80</span> Points!
       </div>
-      <AddCard ProductData={ProductData} />
+      <AddCard ProductData={props.ProductData} />
       <div className="line_Split"></div>
       <div className="little_details">
         <div className="col-lg-6 col-md-6 col-sm-6 little_dets">

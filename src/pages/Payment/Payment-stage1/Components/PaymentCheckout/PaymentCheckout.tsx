@@ -11,7 +11,7 @@ export default function PaymentCheckout() {
       <div className="payment-rightside-stage1-header">
         <div className="price-info">
           <p>Subtotal</p>
-          <h4>$497.00</h4>
+          <h4>$498.00</h4>
         </div>
         <div className="price-info">
           <p>Discount</p>

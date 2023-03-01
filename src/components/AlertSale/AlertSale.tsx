@@ -13,7 +13,8 @@ export default function AlertSale() {
   return (
     <div className="AlertSale">
       <p>LIMITED OFFER: 30% OFF. Use RABBIT30 at Checkout.</p>
-      {date.getHours()} : {date.getMinutes()} :{" "}
+      {date.getHours()} :{" "}
+      {date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()} :{" "}
       {date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds()}
     </div>
   );

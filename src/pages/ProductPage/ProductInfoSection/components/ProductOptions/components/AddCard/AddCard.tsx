@@ -2,36 +2,57 @@ import { FiMinus, FiPlus } from "react-icons/fi";
 import ProductAdding from "../ProductAdding/ProductAdding";
 import "./AddCard.css";
 import checked_circle from "../../../../../../../images/icons/checked_circle.png";
-import { useState, useContext } from "react";
-import { MyUser } from "../../../../../../../App";
+import { useState, useContext, useRef, useEffect } from "react";
+import { myUser } from "../../../../../../../App";
 
-export default function AddCard(ProductData: any) {
-  const Product = { id: 12 };
-  ProductData = ProductData.ProductData.ProductData;
-
+export default function AddCard(props: { ProductData: any }) {
   const [productCount, setProductCount] = useState(1);
+  const [productGet, setProductGet] = useState(1);
+  const addCardButton: any = useRef(0);
+  const User = useContext(myUser);
+
+  useEffect(() => {
+    addCardButton.current.classList.add("adding");
+    let stm = setTimeout(() => {
+      addCardButton.current.classList.remove("adding");
+    }, 500);
+    return () => {
+      clearTimeout(stm);
+    };
+  }, [productGet]);
+
+  function buttonLock() {
+    setProductGet(productGet + 1);
+  }
+
   function getDecreaseCount() {
     if (productCount > 1) {
       setProductCount(productCount - 1);
     }
   }
 
-  const User = useContext(MyUser);
-  function addUserCard(ProductId: number, ProductAmount: number) {
-    const newUser = User.data;
-    const thisProduct = {
-      productId: ProductData.id,
-      productAmount: ProductAmount,
-    };
+  function addUserCard() {
+    buttonLock();
+    const newUser = { ...User.data };
     let DelInd = newUser.cart.findIndex(
-      (item: any) => item.productId == thisProduct.productId
+      (item: any) => item.productId == props.ProductData.id
     );
+    let thisProduct: any;
     if (DelInd !== -1) {
+      thisProduct = {
+        productId: props.ProductData.id,
+        productAmount: newUser.cart[DelInd].productAmount + productCount,
+      };
       newUser.cart.splice(DelInd, 1);
+    } else {
+      thisProduct = {
+        productId: props.ProductData.id,
+        productAmount: productCount,
+      };
     }
     newUser.cart.push(thisProduct);
     User.setUser(newUser);
-    console.log(User.data);
+    setProductCount(1);
   }
 
   return (
@@ -57,12 +78,12 @@ export default function AddCard(ProductData: any) {
           </div>
           <div className="Button_AddCard_Block">
             <button
+              ref={addCardButton}
               className="Button_AddCard"
-              onClick={() => addUserCard(Product.id, productCount)}
+              onClick={addUserCard}
             >
               Add Card
-              <div className="LineV"></div>
-              $120.00
+              <div className="LineV"></div>${props.ProductData.price}
             </button>
           </div>
         </div>

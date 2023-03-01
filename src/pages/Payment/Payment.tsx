@@ -13,7 +13,7 @@ export default function Payment() {
   return (
     <div className="payment-page">
       <PaymentHeader />
-      <PaymentStage3 />
+      <PaymentStage1 />
     </div>
   );
 }

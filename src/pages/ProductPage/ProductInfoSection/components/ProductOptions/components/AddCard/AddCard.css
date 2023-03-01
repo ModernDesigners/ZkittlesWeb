@@ -54,19 +54,37 @@
 .Counter .C_Minus:hover {
   background: rgba(235, 37, 6, 0.0392156863);
 }
-.Counter .LineV {
-  height: 20px;
-  width: 1px;
-  background: #c8c9cb;
-  margin: 0 20px;
-}
 .Counter .InStock {
   color: #17af26;
   font-family: main_r;
   font-size: 14px;
 }
 
+.LineV {
+  height: 20px;
+  width: 1px;
+  background: #c8c9cb;
+  margin: 0 20px;
+}
+
+.adding {
+  pointer-events: none;
+}
+
+.adding::before {
+  content: "Adding";
+  position: absolute;
+  background: #17af26;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+}
+
 .Button_AddCard {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,6 +123,10 @@
 .checked_titles span {
   color: #f2bc1b;
   margin: 0 4px;
+}
+
+.blockButton {
+  pointer-events: none;
 }
 
 @media (max-width: 600px) {

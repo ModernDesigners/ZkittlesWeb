@@ -13,7 +13,7 @@ import ProductPage from "./pages/ProductPage/ProductPage";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import { Route, Routes } from "react-router-dom";
 
-export const MyUser = createContext<any>({});
+export const myUser = createContext<any>({});
 
 function App() {
   const myCart = useRef<any>(null);
@@ -27,23 +27,23 @@ function App() {
 
   const [User, setUser] = useState<object>(userInfo);
 
-  // const MyUser = useContext<any>(MyUserContext);
   return (
     <div className="App">
       <>
-        <MyUser.Provider value={{ data: User, setUser: setUser }}>
+        <myUser.Provider value={{ data: User, setUser: setUser }}>
           <MarginNav />
-          <MyCart myCart={myCart} darkScreen={darkScreen} />
+          <MyCart myCart={myCart} darkScreen={darkScreen} User={User} />
           <HeaderNav myCart={myCart} darkScreen={darkScreen} />
           <Routes>
             <Route path="/">
-              <Route index path="Home" element={<Home myCart={myCart} />} />
+              <Route index element={<Home myCart={myCart} />} />
+              <Route path="Home" element={<Home myCart={myCart} />} />
               <Route path="Payment" element={<Payment />} />
               <Route path="Product/:id" element={<ProductPage />} />
             </Route>
           </Routes>
           <Footer />
-        </MyUser.Provider>
+        </myUser.Provider>
       </>
     </div>
   );

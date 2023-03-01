@@ -1,0 +1,109 @@
+.mycart-products-main {
+  padding: 30px 0px;
+}
+.mycart-products-main .mycart-products .mycart-product {
+  border-bottom: 1px solid #f4f4f4;
+  padding: 22px 0px;
+}
+.mycart-products-main .mycart-products .mycart-product .mycart-product-image {
+  width: 65px;
+  height: 65px;
+  min-width: 65px;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+.mycart-products-main .mycart-products .mycart-product .mycart-product-image img {
+  width: 90%;
+  height: 90%;
+}
+.mycart-products-main .mycart-products .mycart-product .mycart-product-information {
+  display: flex;
+}
+.mycart-products-main .mycart-products .mycart-product .mycart-product-information .R_Side {
+  margin-left: auto;
+}
+.mycart-products-main .mycart-products .mycart-product .mycart-product-information h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #05422c;
+}
+.mycart-products-main .mycart-products .mycart-product .mycart-product-information .productcart-close-icon {
+  width: 24px;
+  border: 1.2px solid #f4f4f4;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+}
+.mycart-products-main .mycart-products .mycart-product .mycart-product-information .productcart-close-icon svg {
+  color: rgb(157, 158, 162);
+}
+.mycart-products-main .total-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.mycart-products-main .total-price h3 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+  color: #eb2606;
+}
+.mycart-products-main button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 40px;
+  gap: 8px;
+  width: 154px;
+  height: 56px;
+  background: #17af26;
+  border-radius: 100px;
+  color: #fff;
+  border: 0;
+  margin: 20px 0px;
+  font-weight: 600;
+}
+.mycart-products-main .payment {
+  margin: 20px 0px;
+  padding: 20px 0px;
+  border-top: 1px solid #f4f4f4;
+}
+.mycart-products-main .payment p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #717378;
+}
+.mycart-products-main .payment .payment-method {
+  display: flex;
+  gap: 20px;
+}
+.mycart-products-main .payment .payment-method div {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 36px;
+  padding: 10px;
+  border-radius: 6px;
+  pad: 20px;
+  border: 1px solid rgb(244, 244, 244);
+}

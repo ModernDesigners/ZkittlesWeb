@@ -1,3 +1,7 @@
+.payment-stage1 {
+  margin-bottom: 220px;
+}
+
 .payment-stage1-main {
   display: flex;
   padding: 50px 0px;
@@ -8,7 +12,6 @@
 }
 .payment-stage1-main .stage1-product {
   padding: 20px 0px;
-  background-color: red;
 }
 
 @media screen and (max-width: 1400px) {
@@ -67,4 +70,4 @@
     font-size: 9px;
     border-radius: 9px !important;
   }
-}
+}/*# sourceMappingURL=PaymentStage1.css.map */
