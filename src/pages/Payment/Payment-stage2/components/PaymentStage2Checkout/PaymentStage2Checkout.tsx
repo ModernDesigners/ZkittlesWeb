@@ -48,11 +48,13 @@ export default function PaymentStage2Checkout() {
             Shelf BC liable if this shipment is sent to an incorrect address. *
           </p>
         </label>
-        <button>
-          <p>Checkout </p>
-          <div className="line"></div>
-          <p>$547.00</p>
-        </button>
+        <Link to="/Payment/Stage3">
+          <button>
+            <p>Checkout </p>
+            <div className="line"></div>
+            <p>$547.00</p>
+          </button>
+        </Link>
       </div>
       <div className="payment-rightside-stage1-footer">
         <p>SECURE PAYMENTS PROVIDED BY</p>

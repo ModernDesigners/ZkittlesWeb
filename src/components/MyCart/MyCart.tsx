@@ -39,7 +39,10 @@ export default function MyCart(props: {
             </div>
           </>
         ) : (
-          <MyCartProducts CartProducts={props.User.cart} />
+          <MyCartProducts
+            closeCart={closeCart}
+            CartProducts={props.User.cart}
+          />
         )}
       </div>
     </>

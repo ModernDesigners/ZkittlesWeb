@@ -6,11 +6,11 @@ import { myUser } from "../../../../../App";
 
 interface show {
   stage3: boolean;
-  cardPrice: number;
-  quantity: number;
-  cardTotalPrice: number;
-  title: string;
-  id: number;
+  cardPrice?: number;
+  quantity?: number;
+  cardTotalPrice?: number;
+  title?: string;
+  id?: number;
 }
 export default function Product({
   stage3,
@@ -59,7 +59,7 @@ export default function Product({
       </div>
       <div className="col-lg-6">
         <div className="product-quantity-price">
-          <h4>${cardPrice.toFixed(2)}</h4>
+          <h4>${cardPrice?.toFixed(2)}</h4>
         </div>
       </div>
     </>
@@ -70,8 +70,8 @@ export default function Product({
       <div className="col-lg-6">
         <div className="product-quantity-price">
           <div className="stage3-product-middle">
-            <p>2x1q1</p>
-            <h4>$24</h4>
+            <p>{quantity}x</p>
+            <h4>${cardPrice}</h4>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@ export default function Product({
           </Col>
           <Col lg={3}>
             <div className="product-price">
-              <p>${cardTotalPrice.toFixed(2)}</p>
+              <p>${cardTotalPrice?.toFixed(2)}</p>
             </div>
           </Col>
         </div>

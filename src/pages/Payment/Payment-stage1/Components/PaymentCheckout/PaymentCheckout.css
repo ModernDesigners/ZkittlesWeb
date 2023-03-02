@@ -15,10 +15,24 @@
   display: flex;
   justify-content: space-between;
 }
+.payment-stage1-rightside .payment-rightside-stage1-header .coupon-code-callback {
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 14px;
+}
+.payment-stage1-rightside .payment-rightside-stage1-header .coupon-code-callback .correct {
+  color: #17af26;
+  font-family: main_r;
+}
+.payment-stage1-rightside .payment-rightside-stage1-header .coupon-code-callback .wrong {
+  color: #eb2606;
+  font-family: main_r;
+}
 .payment-stage1-rightside .payment-rightside-stage1-header .coupon-code {
   gap: 32px;
   display: flex;
   padding: 20px 0px;
+  padding-bottom: 0px;
 }
 .payment-stage1-rightside .payment-rightside-stage1-header .coupon-code input[type=text] {
   width: 100%;

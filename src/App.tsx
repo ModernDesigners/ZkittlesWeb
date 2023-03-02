@@ -12,6 +12,9 @@ import Payment from "./pages/Payment/Payment";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import { Route, Routes } from "react-router-dom";
+import PaymentStage1 from "./pages/Payment/Payment-stage1/PaymentStage1";
+import PaymentStage2 from "./pages/Payment/Payment-stage2/PaymentStage2";
+import PaymentStage3 from "./pages/Payment/Payment-stage3/PaymentStage3";
 
 export const myUser = createContext<any>({});
 
@@ -22,10 +25,12 @@ function App() {
   const userInfo = {
     name: "Luka",
     mail: "ModernDesignGe@gmail.com",
+    points: 250,
+    coupons: [],
     cart: [
       {
         productAmount: 111,
-        productId: 4,
+        productId: 6,
       },
       {
         productAmount: 1,
@@ -35,6 +40,7 @@ function App() {
   };
 
   const [User, setUser] = useState<object>(userInfo);
+  const [promocodeDiscount, setPromocodeDiscount] = useState(0);
 
   return (
     <div className="App">
@@ -47,7 +53,35 @@ function App() {
             <Route path="/">
               <Route index element={<Home myCart={myCart} />} />
               <Route path="Home" element={<Home myCart={myCart} />} />
-              <Route path="Payment" element={<Payment />} />
+              <Route path="Payment">
+                <Route
+                  path="Stage1"
+                  element={
+                    <PaymentStage1
+                      promocodeDiscount={promocodeDiscount}
+                      setPromocodeDiscount={setPromocodeDiscount}
+                    />
+                  }
+                />
+                <Route
+                  path="Stage2"
+                  element={
+                    <PaymentStage2
+                      promocodeDiscount={promocodeDiscount}
+                      setPromocodeDiscount={setPromocodeDiscount}
+                    />
+                  }
+                />
+                <Route
+                  path="Stage3"
+                  element={
+                    <PaymentStage3
+                      promocodeDiscount={promocodeDiscount}
+                      setPromocodeDiscount={setPromocodeDiscount}
+                    />
+                  }
+                />
+              </Route>
               <Route path="Product/:id" element={<ProductPage />} />
             </Route>
           </Routes>

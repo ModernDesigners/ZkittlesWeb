@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import girchi from "../../images/girchi.png";
 import star_ from "../../images/icons/star.png";
-
+import { myUser } from "../../App";
 import "./productcard.css";
 
 interface ProductCard {
@@ -34,12 +34,51 @@ export default function ProductCard({
   old_price,
   in_stock,
 }: ProductCard) {
+  const addCardButtons: any = useRef(0);
+  const [productGet, setProductGet] = useState(1);
+  useEffect(() => {
+    addCardButtons.current.classList.add("adding");
+    let stm = setTimeout(() => {
+      addCardButtons.current.classList.remove("adding");
+    }, 400);
+    return () => {
+      clearTimeout(stm);
+    };
+  }, [productGet]);
   let opt_show = 0;
 
   if (optional_addon == "" || optional_addon.length == 0) {
     opt_show = 0;
   } else {
     opt_show = 1;
+  }
+
+  const User = useContext(myUser);
+
+  function buttonLock() {
+    setProductGet(productGet + 1);
+  }
+
+  function addCard() {
+    buttonLock();
+
+    const newUser = { ...User.data };
+    let DelInd = newUser.cart.findIndex((item: any) => item.productId == id);
+    let thisProduct: any;
+    if (DelInd !== -1) {
+      thisProduct = {
+        productId: id,
+        productAmount: newUser.cart[DelInd].productAmount + 1,
+      };
+      newUser.cart.splice(DelInd, 1);
+    } else {
+      thisProduct = {
+        productId: id,
+        productAmount: 1,
+      };
+    }
+    newUser.cart.push(thisProduct);
+    User.setUser(newUser);
   }
 
   return (
@@ -88,8 +127,11 @@ export default function ProductCard({
               </div>
             ))}
           </div>
+          <button className="add-cart" ref={addCardButtons} onClick={addCard}>
+            Add to Cart
+          </button>
           <Link to={"/Product/" + id}>
-            <button className="add-cart">Add to Cart</button>
+            <button className="see_Details">See Details</button>
           </Link>
         </div>
       </div>

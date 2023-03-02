@@ -60,4 +60,25 @@
       }
     }
   }
+  .total-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px 0px 0px;
+    border-top: 1px solid #f4f4f4;
+    padding-top: 20px;
+    p {
+      margin-bottom: 20px;
+    }
+    button {
+      width: 161px;
+      height: 56px;
+      background: #17af26;
+      border-radius: 100px;
+      color: #fff;
+      font-weight: 600;
+      border: 0px;
+      outline: none;
+    }
+  }
 }

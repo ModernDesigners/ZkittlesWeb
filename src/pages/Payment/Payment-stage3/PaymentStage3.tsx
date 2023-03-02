@@ -5,7 +5,11 @@ import { AiOutlineCheck } from "react-icons/ai";
 import Product from "../Payment-stage1/Components/PaymentProducts/Product";
 import PaymentStage3Products from "./components/PaymentStage3Products/PaymentStage3Products";
 import PaymentStage3Total from "./components/PaymentStage3Total/PaymentStage3Total";
-export default function PaymentStage3() {
+interface promocode {
+  promocodeDiscount: number;
+  setPromocodeDiscount: any;
+}
+export default function PaymentStage3(props: promocode) {
   return (
     <div className="payment-stage3">
       <Container>
@@ -19,7 +23,10 @@ export default function PaymentStage3() {
           </div>
         </div>
         <PaymentStage3Products />
-        <PaymentStage3Total />
+        <PaymentStage3Total
+          promocodeDiscount={props.promocodeDiscount}
+          setPromocodeDiscount={props.setPromocodeDiscount}
+        />
       </Container>
     </div>
   );

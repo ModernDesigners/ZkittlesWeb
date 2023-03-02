@@ -2,6 +2,7 @@ const Products = [
   {
     id: 1,
     image: "",
+    shippingWeight: 7,
     type: "FLOWER",
     name: "2 Oz Deal Watermelon Zkittles + Purple Gushers",
     star: 4.6,
@@ -16,6 +17,7 @@ const Products = [
   {
     id: 2,
     image: "",
+    shippingWeight: 23,
     type: "Type B",
     name: "Product 2",
     star: 3.2,
@@ -31,6 +33,7 @@ const Products = [
   {
     id: 3,
     image: "",
+    shippingWeight: 11,
     type: "Type A",
     name: "Product 3",
     star: 4.8,
@@ -46,6 +49,7 @@ const Products = [
   {
     id: 4,
     image: "",
+    shippingWeight: 22,
     type: "Type C",
     name: "Product 4",
     star: 4.0,
@@ -61,6 +65,7 @@ const Products = [
   {
     id: 5,
     image: "",
+    shippingWeight: 20,
     type: "Type B",
     name: "Product 5",
     star: 3.5,
@@ -76,6 +81,7 @@ const Products = [
   {
     id: 6,
     image: "",
+    shippingWeight: 22,
     type: "Type A",
     name: "Product 6",
     star: 4.2,
@@ -91,6 +97,7 @@ const Products = [
   {
     id: 7,
     image: "",
+    shippingWeight: 30,
     type: "Type C",
     name: "Product 7",
     star: 4.1,
@@ -106,6 +113,7 @@ const Products = [
   {
     id: 8,
     image: "",
+    shippingWeight: 50,
     type: "Type B",
     name: "Product 8",
     star: 3.8,

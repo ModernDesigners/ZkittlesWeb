@@ -58,3 +58,24 @@
 .total-main .total-information .total-rightside .total-count h3 {
   color: #eb2606;
 }
+.total-main .total-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px 0px 0px;
+  border-top: 1px solid #f4f4f4;
+  padding-top: 20px;
+}
+.total-main .total-footer p {
+  margin-bottom: 20px;
+}
+.total-main .total-footer button {
+  width: 161px;
+  height: 56px;
+  background: #17af26;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 600;
+  border: 0px;
+  outline: none;
+}/*# sourceMappingURL=PaymentStage3Total.css.map */

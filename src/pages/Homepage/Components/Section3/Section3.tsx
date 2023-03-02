@@ -19,11 +19,6 @@ export default function Section3() {
 
     if (slider3.current.scrollLeft == maxScroll) {
       slider3.current.scrollLeft = 0;
-    } else if (
-      slider3.current.scrollLeft >
-      slider3.current.clientWidth - scrollW
-    ) {
-      slider3.current.scrollLeft = slider3.current.clientWidth;
     } else {
       slider3.current.scrollLeft += scrollW;
     }

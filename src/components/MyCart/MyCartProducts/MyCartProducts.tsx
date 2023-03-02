@@ -7,7 +7,10 @@ import payment4 from "../../../images/payments/mastercard-3.png";
 import Products from "../../../api/products";
 import { Link } from "react-router-dom";
 
-export default function MyCartProducts(props: { CartProducts: any }) {
+export default function MyCartProducts(props: {
+  CartProducts: any;
+  closeCart: any;
+}) {
   let getPrice = 0;
 
   function getCartItem(productId: number, productAmount: number, index: any) {
@@ -33,8 +36,8 @@ export default function MyCartProducts(props: { CartProducts: any }) {
         <h4>TOTAL</h4>
         <h3>${getPrice.toFixed(2)}</h3>
       </div>
-      <Link to="Payment">
-        <button>Checkout</button>
+      <Link to="Payment/Stage1">
+        <button onClick={props.closeCart}>Checkout</button>
       </Link>
       <div className="payment">
         <p>SECURE PAYMENTS PROVIDED BY</p>

@@ -102,6 +102,8 @@
 }
 
 .section3-slider {
+  overflow: hidden;
+  width: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -142,6 +144,12 @@
 }
 
 @media screen and (max-width: 990px) {
+  .section3 .section3-slider .toLeft {
+    left: 0;
+  }
+  .section3 .section3-slider .toRight {
+    right: 0;
+  }
   .section3 .section3-headerh1 {
     width: 100%;
     font-size: 40px;

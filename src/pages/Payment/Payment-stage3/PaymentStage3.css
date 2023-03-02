@@ -1,7 +1,11 @@
+.payment-stage3 {
+  margin-bottom: 300px;
+}
 .payment-stage3 .stage3-header {
   display: flex;
   justify-content: space-between;
   padding: 50px 0px;
+  border-bottom: 1px solid #f4f4f4;
 }
 .payment-stage3 .stage3-header div {
   display: flex;
@@ -70,4 +74,4 @@
   .payment-stage3 .total-main .total-information .total-middle h4 {
     font-size: 12px;
   }
-}
+}/*# sourceMappingURL=PaymentStage3.css.map */
