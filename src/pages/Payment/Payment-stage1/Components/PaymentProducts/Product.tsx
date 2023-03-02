@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Col, Row } from "react-bootstrap";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import girchi from "../../../../../images/girchi.png";
+import { myUser } from "../../../../../App";
+
 interface show {
   stage3: boolean;
   cardPrice: number;
   quantity: number;
   cardTotalPrice: number;
   title: string;
+  id: number;
 }
 export default function Product({
   stage3,
@@ -15,21 +18,48 @@ export default function Product({
   quantity,
   cardTotalPrice,
   title,
+  id,
 }: show) {
+  const User = useContext<any>(myUser);
+
+  const increaseQuanitity = () => {
+    const index = User.data.cart.findIndex((object: any) => {
+      return object.productId === id;
+    });
+    User.data.cart[index].productAmount += 1;
+
+    User.setUser({
+      ...User.data,
+    });
+  };
+
+  const decreaseQuanitity = () => {
+    const index = User.data.cart.findIndex((object: any) => {
+      return object.productId === id;
+    });
+    User.data.cart[index].productAmount !== 0
+      ? (User.data.cart[index].productAmount -= 1)
+      : null;
+
+    User.setUser({
+      ...User.data,
+    });
+  };
+
   const stage1Product = (
     <>
       <div className="col-lg-6">
         <div className="product-quantity">
-          <AiOutlineMinus />
+          <AiOutlineMinus onClick={decreaseQuanitity} />
           <div>
             <h4>{quantity}</h4>
           </div>
-          <AiOutlinePlus />
+          <AiOutlinePlus onClick={increaseQuanitity} />
         </div>
       </div>
       <div className="col-lg-6">
         <div className="product-quantity-price">
-          <h4>${cardPrice}.00</h4>
+          <h4>${cardPrice.toFixed(2)}</h4>
         </div>
       </div>
     </>
@@ -64,7 +94,7 @@ export default function Product({
           </Col>
           <Col lg={3}>
             <div className="product-price">
-              <p>${cardTotalPrice}.00</p>
+              <p>${cardTotalPrice.toFixed(2)}</p>
             </div>
           </Col>
         </div>

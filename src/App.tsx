@@ -22,7 +22,16 @@ function App() {
   const userInfo = {
     name: "Luka",
     mail: "ModernDesignGe@gmail.com",
-    cart: [],
+    cart: [
+      {
+        productAmount: 111,
+        productId: 4,
+      },
+      {
+        productAmount: 1,
+        productId: 2,
+      },
+    ],
   };
 
   const [User, setUser] = useState<object>(userInfo);

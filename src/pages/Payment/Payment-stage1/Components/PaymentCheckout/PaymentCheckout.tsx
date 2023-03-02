@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./PaymentCheckout.css";
 import payment1 from "../../../../../images/payments/mastercard-1.png";
 import payment2 from "../../../../../images/payments/mastercard-2.png";
 import payment3 from "../../../../../images/payments/mastercard-3.png";
 import payment4 from "../../../../../images/payments/mastercard.png";
+import { myUser } from "../../../../../App";
+import Products from "../../../../../api/products";
+
 export default function PaymentCheckout() {
+  const User = useContext<any>(myUser);
+  const subtotal = () => {
+    let result = 0;
+    User.data.cart.map((e: any) => {
+      result += Products[e.productId].price * e.productAmount;
+    });
+    return result.toFixed(2);
+  };
+
   return (
     <div className="payment-stage1-rightside">
       <div className="payment-rightside-stage1-header">
         <div className="price-info">
           <p>Subtotal</p>
-          <h4>$498.00</h4>
+          <h4>{subtotal()}</h4>
         </div>
         <div className="price-info">
           <p>Discount</p>
@@ -38,7 +50,7 @@ export default function PaymentCheckout() {
         <button>
           <p>Checkout </p>
           <div className="line"></div>
-          <p>$547.00</p>
+          <p>${subtotal()}</p>
         </button>
       </div>
       <div className="payment-rightside-stage1-footer">

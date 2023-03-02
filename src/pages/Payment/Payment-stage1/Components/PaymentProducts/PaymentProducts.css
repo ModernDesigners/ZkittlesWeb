@@ -42,6 +42,9 @@
   width: 100%;
   border-bottom: 1px solid #ededed;
   padding: 20px 0px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .stage1-product .product-information {
   display: flex;

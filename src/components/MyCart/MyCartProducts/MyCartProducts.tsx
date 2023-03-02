@@ -24,7 +24,6 @@ export default function MyCartProducts(props: { CartProducts: any }) {
       />
     );
   }
-
   return (
     <div className="mycart-products-main">
       {props.CartProducts.map((item: any, index: any) =>
@@ -32,7 +31,7 @@ export default function MyCartProducts(props: { CartProducts: any }) {
       )}
       <div className="total-price">
         <h4>TOTAL</h4>
-        <h3>${getPrice}</h3>
+        <h3>${getPrice.toFixed(2)}</h3>
       </div>
       <Link to="Payment">
         <button>Checkout</button>

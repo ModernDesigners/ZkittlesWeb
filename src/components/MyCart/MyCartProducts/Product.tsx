@@ -45,7 +45,7 @@ export default function Product({
             <div className="productcart-close-icon" onClick={removeFromCart}>
               <AiOutlineClose />
             </div>
-            <h4>${totalPrice}</h4>
+            <h4>${totalPrice.toFixed(2)}</h4>
           </div>
         </div>
       </div>
