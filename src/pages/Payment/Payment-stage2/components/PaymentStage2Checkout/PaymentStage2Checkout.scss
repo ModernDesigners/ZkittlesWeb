@@ -1,7 +1,9 @@
+@import "../../../../../colors.scss";
 .payment-stage1-rightside {
   padding: 24px;
   gap: 20px;
   width: 420px;
+  height: auto;
   min-width: 420px;
   border: 1px solid #f4f4f4;
   border-radius: 16px;
@@ -55,6 +57,7 @@
     padding: 10px 0px;
     gap: 10px;
     label {
+      user-select: none;
       display: flex;
       align-items: start;
       padding: 5px 0px;
@@ -69,18 +72,26 @@
         font-size: 14px;
       }
     }
-    button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0px 40px;
-      gap: 16px;
-      width: 100%;
-      height: 56px;
-      background: #c8c9cb;
-      border-radius: 100px;
-      outline: none;
-      border: 0px;
+    a {
+      margin: 20px 0;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 40px;
+        gap: 16px;
+        width: 100%;
+        height: 56px;
+        background: $Lime;
+        border-radius: 100px;
+        outline: none;
+        border: 0px;
+        margin: 0;
+        transition: 0.2s;
+      }
+      .blocked_B {
+        background: #c8c9cb;
+      }
       p {
         margin-bottom: 0px;
         font-size: 17px;

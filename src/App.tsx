@@ -1,4 +1,10 @@
-import React, { createContext, useContext, useRef, useState } from "react";
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import AlertSale from "./components/AlertSale/AlertSale";
 import Footer from "./components/Footer/Footer";
 import MarginNav from "./components/Header/components/MarginNav";
@@ -11,7 +17,7 @@ import Home from "./pages/Homepage/Home";
 import Payment from "./pages/Payment/Payment";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import PaymentStage1 from "./pages/Payment/Payment-stage1/PaymentStage1";
 import PaymentStage2 from "./pages/Payment/Payment-stage2/PaymentStage2";
 import PaymentStage3 from "./pages/Payment/Payment-stage3/PaymentStage3";
@@ -19,6 +25,10 @@ import PaymentStage3 from "./pages/Payment/Payment-stage3/PaymentStage3";
 export const myUser = createContext<any>({});
 
 function App() {
+  let routePath = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [routePath]);
   const myCart = useRef<any>(null);
   const darkScreen = useRef<any>(null);
 
@@ -37,6 +47,7 @@ function App() {
         productId: 2,
       },
     ],
+    address: [],
   };
 
   const [User, setUser] = useState<object>(userInfo);

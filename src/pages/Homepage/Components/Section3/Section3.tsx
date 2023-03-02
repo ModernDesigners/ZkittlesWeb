@@ -63,8 +63,8 @@ export default function Section3() {
             </div>
             <div ref={slider3} className="section3-main-feedbacks">
               <div ref={sliderRow3} className="section3-row">
-                {customersFeedbackAPI.map((item) => (
-                  <div ref={feedBackCard} className="section3-card">
+                {customersFeedbackAPI.map((item, index) => (
+                  <div key={index} ref={feedBackCard} className="section3-card">
                     <div className="section3-card-header">
                       <div className="section3-card-user">
                         <img src={item.image} alt="" />

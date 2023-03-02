@@ -24,8 +24,8 @@ export default function Section6() {
           </div>
           <div className="section6-cards">
             <Row>
-              {s6card.map((e) => (
-                <Col lg={4}>
+              {s6card.map((e, index) => (
+                <Col lg={4} key={index}>
                   <div className="section6-card">
                     <img src={e.image} alt="" />
                     <div className="section6-card-text">

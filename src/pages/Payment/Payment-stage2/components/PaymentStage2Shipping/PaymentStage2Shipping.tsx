@@ -2,7 +2,7 @@ import React from "react";
 import "./PaymentStage2Shipping.css";
 import Bottomside from "./Stage2Inputs/Bottomside/Bottomside";
 import Topside from "./Stage2Inputs/Topside/Topside";
-export default function PaymentStage2Shipping() {
+export default function PaymentStage2Shipping(props: { Address: object }) {
   return (
     <div className="stage2-shipping">
       <div className="stage2-header">
@@ -10,7 +10,7 @@ export default function PaymentStage2Shipping() {
         <p>(3)</p>
       </div>
       <div className="stage2-inputs-main">
-        <Topside />
+        <Topside Address={props.Address} />
         <Bottomside />
       </div>
     </div>

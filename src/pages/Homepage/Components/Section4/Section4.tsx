@@ -42,8 +42,9 @@ export default function Section4() {
           <h1>CHOOSE YOUR WEED</h1>
           <div className="section4-filter">
             <h3>Filter by Interest</h3>
-            {filterAPI.map((e) => (
+            {filterAPI.map((e, index) => (
               <div
+                key={index}
                 onClick={() => setActive(e.id)}
                 className={activeId === e.id ? "active" : ""}
               >
@@ -55,7 +56,7 @@ export default function Section4() {
         <div className="section4-main">
           <Row>
             {Products.map((item, index) => (
-              <Col lg={3} md={6}>
+              <Col lg={3} md={6} key={index}>
                 <ProductCard
                   key={index}
                   id={item.id}

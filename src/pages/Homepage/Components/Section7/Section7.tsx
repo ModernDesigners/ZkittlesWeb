@@ -42,8 +42,9 @@ export default function Section7() {
             <div className="section7-filter">
               <div className="section7-filter-list">
                 <h3>Filter by Interest</h3>
-                {filterAPI.map((e) => (
+                {filterAPI.map((e, index) => (
                   <div
+                    key={index}
                     onClick={() => setActive(e.id)}
                     className={activeId === e.id ? "active" : ""}
                   >
@@ -57,7 +58,7 @@ export default function Section7() {
           <div className="section7-cards">
             <Row>
               {Products.slice(0, 4).map((item, index) => (
-                <Col lg={3} md={6} sm={12}>
+                <Col lg={3} md={6} sm={12} key={index}>
                   <ProductCard
                     key={index}
                     id={item.id}

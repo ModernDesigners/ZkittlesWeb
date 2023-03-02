@@ -9,8 +9,9 @@ export default function PaymentStage3Products() {
   const User = useContext<any>(myUser);
   return (
     <div className="stage3-products">
-      {User.data.cart?.map((e: any) => (
+      {User.data.cart?.map((e: any, index: number) => (
         <Product
+          key={index}
           stage3={true}
           title={Products[e.productId].name}
           quantity={e.productAmount}

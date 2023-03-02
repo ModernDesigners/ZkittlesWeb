@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./PaymentStage2Checkout.css";
 import { Link } from "react-router-dom";
 import payment1 from "../../../../../images/payments/mastercard-1.png";
 import payment2 from "../../../../../images/payments/mastercard-2.png";
 import payment3 from "../../../../../images/payments/mastercard-3.png";
 import payment4 from "../../../../../images/payments/mastercard.png";
-export default function PaymentStage2Checkout() {
+import { myUser } from "../../../../../App";
+export default function PaymentStage2Checkout(props: { Address: any }) {
+  const [check, setCheck] = useState(false);
+  const User = useContext(myUser);
+  function saveAddress() {
+    User.data.address.unshift(props.Address);
+  }
   return (
     <div className="payment-stage1-rightside">
       <div className="payment-rightside-stage1-header">
@@ -33,7 +39,11 @@ export default function PaymentStage2Checkout() {
 
       <div className="payment-rightside-stage1-middle">
         <label htmlFor="checkbox1">
-          <input type="checkbox" id="checkbox1" />
+          <input
+            type="checkbox"
+            id="checkbox1"
+            onChange={(e) => setCheck(e.target.checked)}
+          />
 
           <p>
             I confirm that my address is 100% correct and WILL NOT hold Top
@@ -43,13 +53,10 @@ export default function PaymentStage2Checkout() {
         <label htmlFor="checkbox2">
           <input type="checkbox" id="checkbox2" />
 
-          <p>
-            I confirm that my address is 100% correct and WILL NOT hold Top
-            Shelf BC liable if this shipment is sent to an incorrect address. *
-          </p>
+          <p>Sign me up to receive email updates and news (optional)</p>
         </label>
         <Link to="/Payment/Stage3">
-          <button>
+          <button onClick={saveAddress} className={check ? "" : "blocked_B"}>
             <p>Checkout </p>
             <div className="line"></div>
             <p>$547.00</p>

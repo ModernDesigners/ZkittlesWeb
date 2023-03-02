@@ -33,7 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .DropdownButton:hover {
   background: #f4f4f4;

@@ -62,7 +62,11 @@
   line-height: 150%;
   color: #eb2606;
 }
-.mycart-products-main button {
+.mycart-products-main .CheckA {
+  display: inline-block;
+  border-radius: 100px;
+}
+.mycart-products-main .CheckA button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -75,7 +79,6 @@
   border-radius: 100px;
   color: #fff;
   border: 0;
-  margin: 20px 0px;
   font-weight: 600;
 }
 .mycart-products-main .payment {

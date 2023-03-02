@@ -14,8 +14,9 @@ export default function PaymentProducts() {
           <p>(0)</p>
         </div>
 
-        {User.data.cart.map((e: any) => (
+        {User.data.cart.map((e: any, index: number) => (
           <Product
+            key={index}
             id={e.productId}
             stage3={false}
             cardPrice={Products[e.productId].price}

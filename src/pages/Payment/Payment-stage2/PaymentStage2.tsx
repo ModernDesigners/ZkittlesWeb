@@ -8,15 +8,27 @@ interface promocode {
   setPromocodeDiscount: any;
 }
 export default function PaymentStage2(props: promocode) {
+  let Address = {
+    FirstName: "",
+    LastName: "",
+    Country: "",
+    Region: "",
+    Region2: "",
+    City: "",
+    Province: "",
+    Zip: "",
+    Phone: "",
+    Email: "",
+  };
   return (
     <div className="payment-stage2">
       <Container>
         <div className="payment-stage2-main">
           <div className="payment-stage2-leftside">
-            <PaymentStage2Shipping />
+            <PaymentStage2Shipping Address={Address} />
           </div>
           <div className="payment-stage2-rightside">
-            <PaymentStage2Checkout />
+            <PaymentStage2Checkout Address={Address} />
           </div>
         </div>
       </Container>

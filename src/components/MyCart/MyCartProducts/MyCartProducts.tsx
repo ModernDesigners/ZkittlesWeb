@@ -36,7 +36,7 @@ export default function MyCartProducts(props: {
         <h4>TOTAL</h4>
         <h3>${getPrice.toFixed(2)}</h3>
       </div>
-      <Link to="Payment/Stage1">
+      <Link to="Payment/Stage1" className="CheckA">
         <button onClick={props.closeCart}>Checkout</button>
       </Link>
       <div className="payment">

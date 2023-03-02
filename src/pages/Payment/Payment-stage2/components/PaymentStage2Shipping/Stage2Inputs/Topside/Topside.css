@@ -29,3 +29,7 @@
 .more-information .more-information-bottomside div {
   width: 50%;
 }
+
+input[type=text] {
+  font-family: main_r;
+}

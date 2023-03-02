@@ -63,21 +63,25 @@
       color: #eb2606;
     }
   }
-  button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 40px;
-    gap: 8px;
-    width: 154px;
-    height: 56px;
-    background: #17af26;
+  .CheckA {
+    display: inline-block;
     border-radius: 100px;
-    color: #fff;
-    border: 0;
-    margin: 20px 0px;
-    font-weight: 600;
+
+    button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 40px;
+      gap: 8px;
+      width: 154px;
+      height: 56px;
+      background: #17af26;
+      border-radius: 100px;
+      color: #fff;
+      border: 0;
+      font-weight: 600;
+    }
   }
 
   .payment {

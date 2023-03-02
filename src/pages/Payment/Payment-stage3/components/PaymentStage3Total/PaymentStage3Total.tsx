@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./PaymentStage3Total.css";
 import "../../../Payment-stage1/PaymentStage1.css";
@@ -10,6 +10,7 @@ interface promocode {
 }
 export default function PaymentStage3Total(props: promocode) {
   const User = useContext<any>(myUser);
+  console.log(User.data);
 
   const subtotal = () => {
     let result = 0;
@@ -35,7 +36,6 @@ export default function PaymentStage3Total(props: promocode) {
       (subtotal + shippingCost - User.data.points - props.promocodeDiscount)
     );
   };
-  console.log(props.promocodeDiscount);
 
   return (
     <div className="total-main">
@@ -54,9 +54,9 @@ export default function PaymentStage3Total(props: promocode) {
           </Col>
           <Col lg={4}>
             <div className="total-middle">
-              <h4>New York,US</h4>
+              <h4>{User.data.address[0].City}</h4>
               <h4>Same-Day Dispatching</h4>
-              <h4>Interac</h4>
+              <h4>{User.data.address[0].Email}</h4>
             </div>
           </Col>
           <Col lg={4}>

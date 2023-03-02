@@ -22,8 +22,8 @@ export default function Section5() {
           </div>
           <div className="section5-cards">
             <Row>
-              {S5CardAPI.map((e) => (
-                <Col lg={6} md={6} sm={6}>
+              {S5CardAPI.map((e, index) => (
+                <Col lg={6} md={6} sm={6} key={index}>
                   <div className="section5-card">
                     <div className="section5-card-image">
                       <img src={e.image} alt="" />
