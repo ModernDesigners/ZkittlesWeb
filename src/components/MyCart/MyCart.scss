@@ -1,3 +1,4 @@
+@import "../../colors.scss";
 .darkScreen {
   display: none;
   opacity: 1;
@@ -12,6 +13,16 @@
   top: 0;
 }
 .mycart-main {
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.4);
+  .showUp {
+    display: none;
+    height: 6px;
+    top: 20px;
+    width: 200px;
+    border-radius: 10px;
+    margin: auto;
+    background: $White_;
+  }
   position: fixed;
   height: 100%;
   float: right;
@@ -114,18 +125,44 @@
   z-index: 100;
   animation: getBl 0.3s 1 ease-in-out;
 }
-.myCartActive {
-  transform: translate(0);
-  .mycart-close-icon {
-    opacity: 1 !important;
-    left: -100px !important;
-  }
-}
+
 @keyframes getBl {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+@media (max-width: 699px) {
+  .mycart-main {
+    transform: translateX(0);
+    transform: translateY(100%);
+    width: 100%;
+    top: 30%;
+    border-radius: 20px 20px 0 0;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    height: 70%;
+    .showUp {
+      display: block;
+      margin: 20px auto;
+    }
+
+    .mycart-close-icon {
+      display: none;
+    }
+  }
+}
+.myCartActive {
+  transform: translate(0);
+  .mycart-close-icon {
+    opacity: 1 !important;
+    left: -100px !important;
   }
 }

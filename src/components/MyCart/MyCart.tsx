@@ -18,8 +18,13 @@ export default function MyCart(props: {
 
   return (
     <>
-      <div className="darkScreen" ref={props.darkScreen}></div>
+      <div
+        onClick={closeCart}
+        className="darkScreen"
+        ref={props.darkScreen}
+      ></div>
       <div className="mycart-main" ref={props.myCart}>
+        <div className="showUp"></div>
         <div className="mycart-header">
           <h3>Your Cart</h3>
           <p>({props.User.cart.length})</p>

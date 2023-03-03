@@ -73,8 +73,8 @@
   }
   .Section {
     padding: 50px 0;
-    margin-top: 180px;
     padding-bottom: 320px;
+    margin: 0;
   }
   .starterImage {
     position: absolute;
