@@ -37,16 +37,7 @@ function App() {
     mail: "ModernDesignGe@gmail.com",
     points: 250,
     coupons: [],
-    cart: [
-      {
-        productAmount: 111,
-        productId: 6,
-      },
-      {
-        productAmount: 1,
-        productId: 2,
-      },
-    ],
+    cart: [],
     address: [],
   };
 
@@ -61,7 +52,7 @@ function App() {
           <MyCart myCart={myCart} darkScreen={darkScreen} User={User} />
           <HeaderNav myCart={myCart} darkScreen={darkScreen} />
           <Routes>
-            <Route path="/">
+            <Route path="/ZkittlesWeb">
               <Route index element={<Home myCart={myCart} />} />
               <Route path="Home" element={<Home myCart={myCart} />} />
               <Route path="Payment">

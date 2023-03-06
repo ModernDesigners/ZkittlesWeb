@@ -28,7 +28,7 @@ export default function Nav(props: { myCart: any; darkScreen: any }) {
           <span></span>
         </div>
         <div className="navLogo">
-          <Link to="Home">
+          <Link to="ZkittlesWeb/Home">
             <img src={logo} alt="Logo" />
           </Link>
         </div>

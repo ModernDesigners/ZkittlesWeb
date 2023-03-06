@@ -130,7 +130,7 @@ export default function ProductCard({
           <button className="add-cart" ref={addCardButtons} onClick={addCard}>
             Add to Cart
           </button>
-          <Link to={"/Product/" + id}>
+          <Link to={"/ZkittlesWeb/Product/" + id}>
             <button className="see_Details">See Details</button>
           </Link>
         </div>
