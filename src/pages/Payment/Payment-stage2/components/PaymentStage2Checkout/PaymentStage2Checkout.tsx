@@ -55,7 +55,7 @@ export default function PaymentStage2Checkout(props: { Address: any }) {
 
           <p>Sign me up to receive email updates and news (optional)</p>
         </label>
-        <Link to="/ZkittlesWeb/Payment/Stage3">
+        <Link to="/Payment/Stage3">
           <button onClick={saveAddress} className={check ? "" : "blocked_B"}>
             <p>Checkout </p>
             <div className="line"></div>

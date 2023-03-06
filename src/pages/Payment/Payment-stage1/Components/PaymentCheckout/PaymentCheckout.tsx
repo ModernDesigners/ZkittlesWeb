@@ -107,7 +107,7 @@ export default function PaymentCheckout(props: promocode) {
           <span className="span2">$100.00</span>
         </p>
         <Link to={"/"}>Continue Shopping</Link>
-        <Link to="/ZkittlesWeb/Payment/Stage2">
+        <Link to="/Payment/Stage2">
           <button>
             <p>Checkout </p>
             <div className="line"></div>
