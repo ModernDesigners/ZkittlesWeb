@@ -1,6 +1,13 @@
 .mycart-products-main {
   padding: 30px 0px;
 }
+.mycart-products-main .mycart-products-scroll {
+  height: 400px;
+  overflow-y: scroll;
+}
+.mycart-products-main .mycart-products-scroll::-webkit-scrollbar {
+  display: none;
+}
 .mycart-products-main .mycart-products .mycart-product {
   border-bottom: 1px solid #f4f4f4;
   padding: 22px 0px;
@@ -72,6 +79,7 @@
   justify-content: center;
   align-items: center;
   padding: 0px 40px;
+  margin-top: 20px;
   gap: 8px;
   width: 154px;
   height: 56px;
@@ -109,4 +117,4 @@
   border-radius: 6px;
   pad: 20px;
   border: 1px solid rgb(244, 244, 244);
-}
+}/*# sourceMappingURL=MyCartProducts.css.map */

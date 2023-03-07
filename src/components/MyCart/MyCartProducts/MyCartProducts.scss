@@ -1,5 +1,12 @@
 .mycart-products-main {
   padding: 30px 0px;
+  .mycart-products-scroll {
+    height: 400px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
   .mycart-products {
     .mycart-product {
       border-bottom: 1px solid #f4f4f4;
@@ -73,6 +80,7 @@
       justify-content: center;
       align-items: center;
       padding: 0px 40px;
+      margin-top: 20px;
       gap: 8px;
       width: 154px;
       height: 56px;

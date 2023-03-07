@@ -28,7 +28,9 @@
   padding: 8px 15px;
 }
 .Counter .C_Times {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   margin: 0 10px;
   padding: 5px 15px;
   border-radius: 5px;
@@ -97,6 +99,10 @@
   height: 54px;
   font-size: 15px;
   letter-spacing: 1px;
+  transition: 0.1s;
+}
+.Button_AddCard:active {
+  background-color: #46924d;
 }
 .Button_AddCard .LineV {
   height: 15px;
@@ -136,4 +142,4 @@
     align-items: center;
     gap: 20px;
   }
-}
+}/*# sourceMappingURL=AddCard.css.map */

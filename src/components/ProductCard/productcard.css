@@ -156,11 +156,10 @@
   font-family: main_r;
   position: relative;
   transition: 0.1s;
-  border: 1px solid #17af26;
+  border: 0px;
 }
 .product-card .product-text .product-text-middle .add-cart:active {
-  background: #fff;
-  color: #17af26;
+  background-color: #46924d;
 }
 
 .see_Details {

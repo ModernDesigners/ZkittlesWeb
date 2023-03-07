@@ -29,9 +29,11 @@ export default function MyCartProducts(props: {
   }
   return (
     <div className="mycart-products-main">
-      {props.CartProducts.map((item: any, index: any) =>
-        getCartItem(item.productId, item.productAmount, index)
-      )}
+      <div className="mycart-products-scroll">
+        {props.CartProducts.map((item: any, index: any) =>
+          getCartItem(item.productId, item.productAmount, index)
+        )}
+      </div>
       <div className="total-price">
         <h4>TOTAL</h4>
         <h3>${getPrice.toFixed(2)}</h3>
