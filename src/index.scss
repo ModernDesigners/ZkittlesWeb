@@ -4,13 +4,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-::-webkit-scrollbar {
-  width: 15px;
-  background: $White_;
-}
-::-webkit-scrollbar-thumb {
-  background: $PGreenAlt2;
-}
+
 *::selection {
   background: $PGreenAlt;
   color: white;

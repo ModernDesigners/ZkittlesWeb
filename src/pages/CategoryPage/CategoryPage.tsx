@@ -5,10 +5,13 @@ import Green from "../../images/icons/Green.png";
 import Coin from "../../images/icons/Coin.png";
 import Filters from "./components/Filters/Filters";
 import Shop from "./components/Shop/Shop";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function CategoryPage() {
   const [filters, setFilters] = useState<boolean>(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="CategoryPage">
       <div className="Category_Starter">

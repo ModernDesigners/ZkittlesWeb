@@ -9,6 +9,9 @@ interface promocode {
   setPromocodeDiscount: any;
 }
 export default function PaymentStage1(props: promocode) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="payment-stage1">
       <div className="payment-stage1-main container">

@@ -5,7 +5,9 @@ import "./index.css";
 import { BrowserRouter, HashRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <HashRouter>
-    <App />
-  </HashRouter>
+  <React.StrictMode>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </React.StrictMode>
 );

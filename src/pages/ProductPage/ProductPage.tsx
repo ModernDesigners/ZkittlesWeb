@@ -5,10 +5,9 @@ import ProductsRow from "./ProductInfoSection/components/ProductOptions/componen
 import ProductInfoSection from "./ProductInfoSection/ProductInfoSection";
 import "./ProductPage.css";
 export default function ProductPage() {
-  const routePath = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [routePath]);
+  }, []);
 
   return (
     <div className="ProductPage">

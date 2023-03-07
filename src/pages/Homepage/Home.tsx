@@ -32,7 +32,6 @@ export default function Home(props: { myCart: any }) {
       <Section7 />
       <Section8 />
       <Section9 />
-      <Footer />
     </>
   );
 }

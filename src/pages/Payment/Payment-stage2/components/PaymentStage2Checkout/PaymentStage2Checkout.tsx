@@ -1,16 +1,20 @@
 import React, { useContext, useState } from "react";
 import "./PaymentStage2Checkout.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import payment1 from "../../../../../images/payments/mastercard-1.png";
 import payment2 from "../../../../../images/payments/mastercard-2.png";
 import payment3 from "../../../../../images/payments/mastercard-3.png";
 import payment4 from "../../../../../images/payments/mastercard.png";
 import { myUser } from "../../../../../App";
 export default function PaymentStage2Checkout(props: { Address: any }) {
+  const navigate = useNavigate();
   const [check, setCheck] = useState(false);
   const User = useContext(myUser);
   function saveAddress() {
     User.data.address.unshift(props.Address);
+    if (check == true) {
+      navigate("/Payment/Stage3");
+    }
   }
   return (
     <div className="payment-stage1-rightside">
@@ -55,13 +59,11 @@ export default function PaymentStage2Checkout(props: { Address: any }) {
 
           <p>Sign me up to receive email updates and news (optional)</p>
         </label>
-        <Link to="/Payment/Stage3">
-          <button onClick={saveAddress} className={check ? "" : "blocked_B"}>
-            <p>Checkout </p>
-            <div className="line"></div>
-            <p>$547.00</p>
-          </button>
-        </Link>
+        <button onClick={saveAddress} className={check ? "" : "blocked_B"}>
+          <p>Checkout </p>
+          <div className="line"></div>
+          <p>$547.00</p>
+        </button>
       </div>
       <div className="payment-rightside-stage1-footer">
         <p>SECURE PAYMENTS PROVIDED BY</p>

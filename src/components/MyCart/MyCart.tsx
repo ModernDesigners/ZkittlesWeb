@@ -3,6 +3,7 @@ import "./MyCart.css";
 import cart from "../../images/cart-bag1.png";
 import { AiOutlineRight } from "react-icons/ai";
 import MyCartProducts from "./MyCartProducts/MyCartProducts";
+import { Link } from "react-router-dom";
 
 export default function MyCart(props: {
   myCart: any;
@@ -39,7 +40,9 @@ export default function MyCart(props: {
                 <div>
                   <img src={cart} alt="" />
                 </div>
-                <button>Show Product</button>
+                <Link to="/Category">
+                  <button onClick={closeCart}>Show Product</button>
+                </Link>
               </div>
             </div>
           </>

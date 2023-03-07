@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./PaymentStage3.css";
 import { Container } from "react-bootstrap";
 import { AiOutlineCheck } from "react-icons/ai";
@@ -10,6 +10,9 @@ interface promocode {
   setPromocodeDiscount: any;
 }
 export default function PaymentStage3(props: promocode) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="payment-stage3">
       <Container>

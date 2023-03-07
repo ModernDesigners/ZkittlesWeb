@@ -70,10 +70,8 @@
 .payment-stage1-rightside .payment-rightside-stage1-middle label p {
   font-size: 14px;
 }
-.payment-stage1-rightside .payment-rightside-stage1-middle a {
+.payment-stage1-rightside .payment-rightside-stage1-middle button {
   margin: 20px 0;
-}
-.payment-stage1-rightside .payment-rightside-stage1-middle a button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,15 +86,15 @@
   margin: 0;
   transition: 0.2s;
 }
-.payment-stage1-rightside .payment-rightside-stage1-middle a .blocked_B {
+.payment-stage1-rightside .payment-rightside-stage1-middle .blocked_B {
   background: #c8c9cb;
 }
-.payment-stage1-rightside .payment-rightside-stage1-middle a p {
+.payment-stage1-rightside .payment-rightside-stage1-middle p {
   margin-bottom: 0px;
   font-size: 17px;
-  color: #fff;
+  color: #9d9ea2;
 }
-.payment-stage1-rightside .payment-rightside-stage1-middle a .line {
+.payment-stage1-rightside .payment-rightside-stage1-middle .line {
   width: 12px;
   height: 0px;
   border: 1px solid #ffffff;

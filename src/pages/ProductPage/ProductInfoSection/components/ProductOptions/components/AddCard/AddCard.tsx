@@ -11,16 +11,6 @@ export default function AddCard(props: { ProductData: any }) {
   const addCardButton: any = useRef(0);
   const User = useContext(myUser);
 
-  useEffect(() => {
-    addCardButton.current.classList.add("adding");
-    let stm = setTimeout(() => {
-      addCardButton.current.classList.remove("adding");
-    }, 500);
-    return () => {
-      clearTimeout(stm);
-    };
-  }, [productGet]);
-
   function buttonLock() {
     setProductGet(productGet + 1);
   }

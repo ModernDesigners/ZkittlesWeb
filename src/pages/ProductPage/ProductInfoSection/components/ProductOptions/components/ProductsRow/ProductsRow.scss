@@ -1,7 +1,9 @@
 @import "../../../../../../../colors.scss";
 
-.ProductsRow {
+.ProductsRoww {
     margin-top: 30px;
+    justify-content: flex-start !important;
+    padding-bottom: 250px;
     .starter {
         font-size: 24px;
         font-family: main_r;
@@ -12,6 +14,7 @@
     .ProductsRowwer {
         display: flex;
         align-items: center;
+        width: 100%;
     }
 }
 .section2-products-main-slider {

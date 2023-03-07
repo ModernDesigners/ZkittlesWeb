@@ -21,14 +21,22 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import PaymentStage1 from "./pages/Payment/Payment-stage1/PaymentStage1";
 import PaymentStage2 from "./pages/Payment/Payment-stage2/PaymentStage2";
 import PaymentStage3 from "./pages/Payment/Payment-stage3/PaymentStage3";
+import Loader from "./components/Loader/Loader";
 
 export const myUser = createContext<any>({});
 
 function App() {
+  const [Loaders, setLoaders] = useState(1);
   let routePath = useLocation();
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [routePath]);
+
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [routePath]);
+    setLoaders(0);
+  }, []);
+
   const myCart = useRef<any>(null);
   const darkScreen = useRef<any>(null);
 
@@ -48,6 +56,7 @@ function App() {
     <div className="App">
       <>
         <myUser.Provider value={{ data: User, setUser: setUser }}>
+          <Loader unshow={Loaders} />
           <MarginNav />
           <MyCart myCart={myCart} darkScreen={darkScreen} User={User} />
           <HeaderNav myCart={myCart} darkScreen={darkScreen} />
@@ -55,6 +64,7 @@ function App() {
             <Route path="/">
               <Route index element={<Home myCart={myCart} />} />
               <Route path="Home" element={<Home myCart={myCart} />} />
+              <Route path="Category" element={<CategoryPage />} />
               <Route path="Payment">
                 <Route
                   path="Stage1"

@@ -1,0 +1,37 @@
+.Loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: 0.3s;
+}
+.Loader .Loader_Inside {
+  height: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: transparent;
+  border-bottom: 10px solid rgba(255, 255, 255, 0);
+  border-right: 10px solid #17af26;
+  border-top: 10px solid #17af26;
+  border-left: 10px solid #17af26;
+  animation: loaderCircle 1s infinite linear;
+}
+
+.disabledLoader {
+  display: none;
+}
+
+@keyframes loaderCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

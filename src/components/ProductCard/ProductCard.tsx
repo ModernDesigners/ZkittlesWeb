@@ -4,6 +4,7 @@ import girchi from "../../images/girchi.png";
 import star_ from "../../images/icons/star.png";
 import { myUser } from "../../App";
 import "./productcard.css";
+// import useTimeout from "../UseTimeout";
 
 interface ProductCard {
   reffer?: any;
@@ -36,15 +37,8 @@ export default function ProductCard({
 }: ProductCard) {
   const addCardButtons: any = useRef(0);
   const [productGet, setProductGet] = useState(1);
-  useEffect(() => {
-    addCardButtons.current.classList.add("adding");
-    let stm = setTimeout(() => {
-      addCardButtons.current.classList.remove("adding");
-    }, 400);
-    return () => {
-      clearTimeout(stm);
-    };
-  }, [productGet]);
+  const User = useContext(myUser);
+
   let opt_show = 0;
 
   if (optional_addon == "" || optional_addon.length == 0) {
@@ -53,15 +47,11 @@ export default function ProductCard({
     opt_show = 1;
   }
 
-  const User = useContext(myUser);
-
   function buttonLock() {
     setProductGet(productGet + 1);
   }
 
   function addCard() {
-    buttonLock();
-
     const newUser = { ...User.data };
     let DelInd = newUser.cart.findIndex((item: any) => item.productId == id);
     let thisProduct: any;

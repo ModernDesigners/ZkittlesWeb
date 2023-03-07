@@ -36,7 +36,7 @@ export default function ProductsRow() {
   }
 
   return (
-    <div className="ProductsRow Get_Push_Down">
+    <div className="ProductsRoww Get_Push_Down">
       <p className="starter">Featured Product</p>
       <div className="ProductsRowwer">
         <div className="section2-products-main-slider">

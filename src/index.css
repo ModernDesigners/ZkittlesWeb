@@ -4,15 +4,6 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  width: 15px;
-  background: #f4f4f4;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #0a6845;
-}
-
 *::selection {
   background: #0d9d68;
   color: white;
